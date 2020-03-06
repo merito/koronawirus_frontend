@@ -108,14 +108,14 @@ const Map = React.forwardRef(({
         }}
       >
         {props.points && props.points.map(item => {
-          const { location: { lat, lon }, type } = item
+          const { location: { lat, lon }, type, infected } = item
 
           return <Marker
             key={item.id}
-            icon={new Icon({
-              iconUrl: getIconUrl(type),
-              iconSize: [30, 30],
-              iconAnchor: [15, 30],
+            icon={new DivIcon({
+              html: infected,
+              className: type,
+              iconSize: [(1+(0.05*infected))*35, (1+(0.05*infected))*35],
             })}
             position={[lat, lon]}
             onClick={() => {
@@ -129,33 +129,21 @@ const Map = React.forwardRef(({
         <Marker
           icon={new Icon({
             iconUrl: '/location-icons/point.svg',
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
+            iconSize: [50, 50],
+            iconAnchor: [20, 20],
           })}
           zIndexOffset={1000}
           position={activeMarker}
           draggable={props.editMode}
-          onMoveEnd={e => {
-            if (props.editMode) {
-              updateCoordinates(e.target.getLatLng())
-            }
-          }}
         />
       }
-      {activeMarker &&
-        <Popup
-          position={activeMarker}
-          closeButton={false}
-          className={classes.popup}
-        >
-        </Popup>
-      }
+      {activeMarker}
       {props.currentLocation &&
         <Marker
           icon={new Icon({
             iconUrl: '/location-icons/current.svg',
             iconSize: [24, 24],
-            iconAnchor: [12, 12],
+            iconAnchor: [0, 0],
           })}
           zIndexOffset={1100}
           position={props.currentLocation}
@@ -198,6 +186,45 @@ const useStyles = makeStyles(theme => ({
     '& .woodboard-cluster': {
       backgroundColor: 'transparent',
       backgroundImage: 'url(/woodboard.svg)',
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontWeight: 'bold',
+      color: '#000000',
+      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+    },
+    '& .ACTIVE': {
+      backgroundColor: 'transparent',
+      backgroundImage: 'url(/location-icons/active.svg)',
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontWeight: 'bold',
+      color: '#000000',
+      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+    },
+    '& .RESTRICTIONS': {
+      backgroundColor: 'transparent',
+      backgroundImage: 'url(/location-icons/restrictions.svg)',
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontWeight: 'bold',
+      color: '#000000',
+      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+    },
+    '& .CURED': {
+      backgroundColor: 'transparent',
+      backgroundImage: 'url(/location-icons/cured.svg)',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
