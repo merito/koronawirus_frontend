@@ -9,7 +9,7 @@ const Maintenance = () => {
       <Typography
         variant='h4'
         className={classes.heading}
-      >W serwisie Wiating trwają właśnie prace serwisowe.</Typography>
+      >W serwisie trwają właśnie prace serwisowe.</Typography>
       <Typography
         variant='h5'
         className={classes.subheading}

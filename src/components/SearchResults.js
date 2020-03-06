@@ -30,7 +30,7 @@ const SearchResults = ({
               <ListItemAvatar>
                 <img src={getIconUrl(item.type)} className={classes.listAvatar} />
               </ListItemAvatar>
-              <ListItemText primary={item.name} secondary={item.description} />
+              <ListItemText primary={item.name}/>
             </ListItem>
             <Divider variant='inset' component='li' />
           </React.Fragment>

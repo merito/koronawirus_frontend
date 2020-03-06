@@ -10,21 +10,15 @@ export default {
     search: 'Szukaj',
     backToResults: 'Powrót do wyników',
     locationInfo: {
-      description: 'Opis',
-      directions: 'Wskazówki dojścia',
-      fireAccess: 'Dostęp do ognia',
-      waterAccess: 'Dostęp do wody',
-      lastUpdate: 'Ostatnia aktualizacja',
+      infected: 'Zarażeni',
+      deaths: 'Zmarli',
+      cured: 'Wyleczeni',
+      lastUpdate: 'Ostatnia aktualizacja'
     },
     locationType: {
-      cabin: 'Chatka',
-      cabinFireplace: 'Chatka z paleniskiem',
-      shed: 'Wiata',
-      waterSource: 'Źródło',
-      cave: 'Jaskinia',
-      pasture: 'Paśnik',
-      raisedHide: 'Ambona',
-      tower: 'Wieża widokowa',
+      active: 'Zarażeni',
+      restrictions: 'Ograniczenia',
+      cured: 'Wyleczeni'
     },
     noResults: 'Nic nie znaleziono',
     connectionProblem: {
@@ -84,21 +78,15 @@ export default {
     search: 'Search',
     backToResults: 'Back to results',
     locationInfo: {
-      description: 'Description',
-      directions: 'How to reach the place',
-      fireAccess: 'Access to fire',
-      waterAccess: 'Access to water',
-      lastUpdate: 'Last update',
+      infected: 'Infected',
+      deaths: 'Deaths',
+      cured: 'Cured',
+      lastUpdate: 'Last update'
     },
     locationType: {
-      cabin: 'Cabin',
-      cabinFireplace: 'Cabin with a fireplace',
-      shed: 'Shed',
-      waterSource: 'Water source',
-      cave: 'Cave',
-      pasture: 'Pasture',
-      raisedHide: 'Raised Hide',
-      tower: 'Observation Tower',
+      active: 'Infected',
+      restrictions: 'Restrictions',
+      cured: 'Cured'
     },
     noResults: 'No results',
     connectionProblem: {

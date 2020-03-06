@@ -11,13 +11,8 @@ import Loader from './Loader'
 
 
 const NavBar = ({
-  user,
   links,
-  isLoggedIn,
-  logout,
-  loginWithRedirect,
   onSearch,
-  loading,
   language,
   languages,
   setLanguage,
@@ -56,27 +51,13 @@ const NavBar = ({
             horizontal: 'left',
           }}
         >{language ? language.toUpperCase() : ''}</Dropdown>
-        {loading
-          ? <Loader />
-          : <Dropdown items={[
+
+          <Dropdown items={[
             ...links,
-            {
-              label: <Text id={isLoggedIn ? 'auth.logout' : 'auth.login'} />,
-              callback: () => isLoggedIn ? logout() : loginWithRedirect({}),
-            },
           ]}>
-            {isLoggedIn
-              ? <>
-                <Avatar alt={user.name} src={user.picture}>
-                  {!user.picture && `${user.given_name.charAt(0)}${user.family_name.charAt(0)}`}
-                </Avatar>
-                <Typography className={classes.name}>{user.name && user.name}</Typography>
-                <ArrowDropDown />
-              </>
-              : <Menu />
-            }
+              <Menu />
           </Dropdown>
-        }
+
       </Toolbar>
     </AppBar>
   )

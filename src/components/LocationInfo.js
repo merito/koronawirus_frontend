@@ -14,9 +14,7 @@ import Text from './Text'
 
 
 const LocationInfo = ({
-  loggedIn,
   selectedLocation,
-  onImageUpload,
 }) => {
   const classes = useStyles()
   const [imagesLoading, setImagesLoading] = React.useState()
@@ -33,57 +31,23 @@ const LocationInfo = ({
           color='textSecondary'
           gutterBottom
         >
-          {type && <Text id={type} />} | {roundLatLng(selectedLocation.location.lat)}, {roundLatLng(selectedLocation.location.lon)}
+          {type && <Text id={type} />}
         </Typography>
 
         <Typography
           variant='body1'
           gutterBottom
-        ><strong><Text id='locationInfo.description' />:</strong> {selectedLocation.description}</Typography>
+        ><strong><Text id='locationInfo.infected' />:</strong> {selectedLocation.infected}</Typography>
 
-        {selectedLocation.directions &&
-          <Typography
-            variant='body1'
-            gutterBottom
-          ><strong><Text id='locationInfo.directions' />:</strong> {selectedLocation.directions}</Typography>
-        }
+        <Typography
+          variant='body1'
+          gutterBottom
+        ><strong><Text id='locationInfo.deaths' />:</strong> {selectedLocation.deaths}</Typography>
 
-        <div>
-          <Typography
-            variant='subtitle2'
-            component='span'
-          ><Text id='locationInfo.waterAccess' />: </Typography>
-
-          <Typography
-            variant='body2'
-            gutterBottom
-            component='span'
-          >
-            {!selectedLocation.water_exists
-              ? <Text id='none' />
-              : selectedLocation.water_comment || <Text id='is' />
-            }
-          </Typography>
-        </div>
-
-        <div>
-          <Typography
-            variant='subtitle2'
-            component='span'
-          ><Text id='locationInfo.fireAccess' />: </Typography>
-
-          <Typography
-            variant='body2'
-            gutterBottom
-            component='span'
-          >
-            {!selectedLocation.fire_exists
-              ? <Text id='none' />
-              : selectedLocation.fire_comment || <Text id='is' />
-            }.
-          </Typography>
-        </div>
-
+        <Typography
+          variant='body1'
+          gutterBottom
+        ><strong><Text id='locationInfo.cured' />:</strong> {selectedLocation.cured}</Typography>
       </div>
 
       <div className={classes.footer}>
@@ -94,37 +58,6 @@ const LocationInfo = ({
             align='right'
             color='textSecondary'
           ><Text id='locationInfo.lastUpdate' />: {formatDate(updatedAt)}</Typography>
-        }
-        {loggedIn &&
-          <ButtonGroup
-            size='small'
-            variant='text'
-            align='right'
-          >
-            <Button
-              component={Link}
-              to={`/location/${selectedLocation.id}/edit`}
-            ><Text id='actions.edit' /></Button>
-            {imagesLoading
-              ? <Button disabled><Text id='actions.addPhoto' /> <Loader /></Button>
-              : <Button>
-                <Dropzone onDrop={async files => {
-                  setImagesLoading(true)
-                  await onImageUpload(files)
-                  setImagesLoading(false)
-                }}>
-                  {({ getRootProps, getInputProps }) => (
-                    <section>
-                      <div {...getRootProps()}>
-                        <input {...getInputProps()} />
-                        <Text id='actions.addPhoto' />
-                      </div>
-                    </section>
-                  )}
-                </Dropzone>
-              </Button>
-            }
-          </ButtonGroup>
         }
       </div>
     </div>

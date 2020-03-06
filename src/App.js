@@ -9,13 +9,9 @@ import SearchResults from './components/SearchResults'
 import BackToSearch from './components/BackToSearch'
 // import PhotosForm from './components/PhotosForm'
 import Info from './components/Info'
-import Regulamin from './components/Regulamin'
-import PolitykaPrywatnosci from './components/PolitykaPrywatnosci'
 import NavBarContainer from './containers/NavBarContainer'
 import MapContainer from './containers/MapContainer'
 import SelectedLocationContainer from './containers/SelectedLocationContainer'
-import LocationFormContainer from './containers/LocationFormContainer'
-import LogsContainer from './containers/LogsContainer'
 
 
 const App = ({ history, location: { pathname } }) => {
@@ -64,19 +60,6 @@ const App = ({ history, location: { pathname } }) => {
             />
           </Route>
 
-          <Route exact path='/location/new'>
-            <ContentWrapper>
-              <LocationFormContainer
-                cachedLocation={cachedLocation}
-                setCachedLocation={setCachedLocation}
-                isNew
-                refreshMap={async () => {
-                  await mapRef.current.loadMapMarkers()
-                }}
-              />
-            </ContentWrapper>
-          </Route>
-
           <Route exact path='/location/:id'>
             <SelectedLocationContainer
               cachedLocation={cachedLocation}
@@ -89,19 +72,6 @@ const App = ({ history, location: { pathname } }) => {
               }} />
               : null
             }
-          </Route>
-
-          <Route exact path='/location/:id/edit'>
-            <ContentWrapper>
-              <LocationFormContainer
-                cachedLocation={cachedLocation}
-                setCachedLocation={setCachedLocation}
-                setActiveMarker={location => mapRef.current.setActiveMarker(location)}
-                refreshMap={async () => {
-                  await mapRef.current.loadMapMarkers()
-                }}
-              />
-            </ContentWrapper>
           </Route>
 
           {/* <Route exact path='/location/:id/photos'>
@@ -123,10 +93,10 @@ const App = ({ history, location: { pathname } }) => {
           setCachedLocation(point)
           history.push(`/location/${point.id}`)
         }}
-        openAddMarkerTab={({ lat, lng: lon }) => {
-          setCachedLocation({ location: { lat, lon } })
-          history.push('/location/new')
-        }}
+        // openAddMarkerTab={({ lat, lng: lon }) => {
+        //   setCachedLocation({ location: { lat, lon } })
+        //   history.push('/location/new')
+        // }}
         closeTab={() => history.push('/')}
         updateCoordinates={({ lat, lng: lon }) => {
           setCachedLocation({ ...cachedLocation, location: { lon, lat } })
@@ -138,9 +108,6 @@ const App = ({ history, location: { pathname } }) => {
 
       <Switch>
         <Route exact path='/info' component={Info} />
-        <Route exact path='/regulamin' component={Regulamin} />
-        <Route exact path='/polityka-prywatnosci' component={PolitykaPrywatnosci} />
-        <Route exact path='/log' component={LogsContainer} />
       </Switch>
 
     </Layout>

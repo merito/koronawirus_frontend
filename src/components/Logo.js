@@ -8,8 +8,8 @@ const Logo = ({ className }) => {
       <img
         src='/logo-app.png'
         srcSet='/logo-app@2x.png 2x'
-        title='Wiating'
-        alt='Wiating'
+        title='Koronawirus w Polsce'
+        alt='Koronawirus w Polsce'
       />
       <img
         src='/logo-app-typo.png'

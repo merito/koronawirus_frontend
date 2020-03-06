@@ -15,9 +15,7 @@ import { Icon, DivIcon } from 'leaflet'
 import MarkerClusterGroup from 'react-leaflet-markercluster'
 import 'leaflet/dist/leaflet.css'
 import 'react-leaflet-markercluster/dist/styles.min.css'
-import ContextMenu from './ContextMenu'
 import { getIconUrl } from '../utils/helpers'
-import exportToKML from '../utils/exportToKML'
 
 
 const Map = React.forwardRef(({
@@ -25,7 +23,6 @@ const Map = React.forwardRef(({
   ...props
 }, ref) => {
   const [activeMarker, setActiveMarker] = React.useState()
-  const [contextMenu, setContextMenu] = React.useState()
   const [previousBounds, setPreviousBounds] = React.useState()
   const mapRef = React.useRef()
   const theme = useTheme()
@@ -34,7 +31,7 @@ const Map = React.forwardRef(({
   const classes = useStyles()
 
   React.useEffect(() => {
-    if (activeMarker && !contextMenu) {
+    if (activeMarker) {
       mapRef.current.leafletElement.panTo(activeMarker)
     }
   }, [activeMarker])
@@ -67,7 +64,6 @@ const Map = React.forwardRef(({
     // same data.
     if (JSON.stringify(bounds) !== JSON.stringify(previousBounds)) {
       props.loadMapMarkers(bounds)
-      props.setStoredPosition(mapRef.current.viewport)
       setPreviousBounds(bounds)
     }
   }
@@ -89,23 +85,8 @@ const Map = React.forwardRef(({
       maxBounds={[[-90, -180], [90, 180]]}
       zoomControl={false}
       onMoveEnd={() => loadMapMarkers()}
-      onContextMenu={e => {
-        if (!props.editMode) {
-          if (props.isLoggedIn) {
-            setContextMenu(!contextMenu)
-            setActiveMarker(contextMenu ? null : e.latlng)
-          }
-          props.closeTab()
-        }
-      }}
       onClick={e => {
-        if (contextMenu) {
-          setContextMenu(false)
-          setActiveMarker(false)
-        } else if (!activeMarker && props.editMode && props.isLoggedIn) {
-          setActiveMarker(e.latlng)
-          updateCoordinates(e.latlng)
-        }
+        setActiveMarker(false)
       }}
     >
       <TileLayer
@@ -139,7 +120,6 @@ const Map = React.forwardRef(({
             position={[lat, lon]}
             onClick={() => {
               props.openLocationTab(item)
-              setContextMenu(null)
               setActiveMarker([lat, lon])
             }}
           />
@@ -162,17 +142,12 @@ const Map = React.forwardRef(({
           }}
         />
       }
-      {activeMarker && contextMenu &&
+      {activeMarker &&
         <Popup
           position={activeMarker}
           closeButton={false}
           className={classes.popup}
         >
-          <ContextMenu addMarker={() => {
-            setContextMenu(null)
-            props.openAddMarkerTab(activeMarker)
-            mapRef.current.leafletElement.setView(activeMarker)
-          }} />
         </Popup>
       }
       {props.currentLocation &&
@@ -203,13 +178,6 @@ const Map = React.forwardRef(({
               }
             </a>
           </Control>
-          <Control position='topright' className='leaflet-bar'>
-            <a
-              className={classes.customControl}
-              onClick={() => exportToKML(props.points)}
-              disabled={!props.points || !props.points.length}
-            >KML</a>
-          </Control>
         </>
       }
       <ScaleControl position='bottomright' imperial={false} />
@@ -237,7 +205,7 @@ const useStyles = makeStyles(theme => ({
       alignItems: 'center',
       justifyContent: 'center',
       fontWeight: 'bold',
-      color: '#522d19',
+      color: '#000000',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
     },
   },

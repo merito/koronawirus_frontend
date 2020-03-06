@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSnackbar } from 'notistack'
 import api, { CancelToken, isCancel } from '../api'
-import { useAuth0 } from '../utils/auth0Provider'
 import { useCurrentLocation } from '../utils/CurrentLocationProvider'
 import Map from '../components/Map'
 import Text from '../components/Text'
@@ -14,14 +13,9 @@ const MapContainer = React.forwardRef((props, ref) => {
   const [initalPosition, setInitalPosition] = React.useState()
   const { enqueueSnackbar } = useSnackbar()
   const { location, loading, error } = useCurrentLocation()
-  const defaultPosition = [50.39805, 16.844417] // The area of Polish mountains.
+  const defaultPosition = [51.919231, 19.134422]
 
   const mapRef = React.useRef()
-  const {
-    isLoggedIn,
-    setStoredPosition,
-    getStoredPosition,
-  } = useAuth0()
 
   const loadMapMarkers = async bounds => {
     const { _northEast, _southWest } = bounds
@@ -65,8 +59,7 @@ const MapContainer = React.forwardRef((props, ref) => {
   React.useEffect(() => {
     // Check whether stored position is available asychronously from recognized
     // location, because location recognition may take undefined amount of time.
-    const position = getStoredPosition()
-    setInitalPosition(position || { center: defaultPosition })
+    setInitalPosition({ center: defaultPosition })
   }, [])
 
   React.useEffect(() => {
@@ -79,8 +72,8 @@ const MapContainer = React.forwardRef((props, ref) => {
 
   return (
     <Map
-      isLoggedIn={isLoggedIn}
-      setStoredPosition={coords => setStoredPosition(coords)}
+      // isLoggedIn={isLoggedIn}
+      // setStoredPosition={coords => setStoredPosition(coords)}
       loadMapMarkers={viewport => loadMapMarkers(viewport)}
       points={points}
       currentLocation={location}
