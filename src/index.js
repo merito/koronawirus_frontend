@@ -9,7 +9,6 @@ import App from './App'
 import history from './history'
 import enableServiceWorker from './enableServiceWorker'
 import TranslationsProvider from './utils/TranslationsProvider'
-import CurrentLocationProvider from './utils/CurrentLocationProvider'
 import theme from './theme'
 import formTheme from './utils/formTheme'
 import Maintenance from './components/Maintenance'
@@ -24,9 +23,7 @@ ReactDOM.render(
           <SnackbarProvider maxSnack={3} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
               <FormThemeProvider theme={formTheme}>
                 <CssBaseline />
-                <CurrentLocationProvider>
                   <App />
-                </CurrentLocationProvider>
               </FormThemeProvider>
           </SnackbarProvider>
         </Router>
