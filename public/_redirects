@@ -1,3 +1,1 @@
 /location/*  /index.html  200
-/search  /index.html  200
-/api/* https://serwer.wiating.eu/:splat 200
