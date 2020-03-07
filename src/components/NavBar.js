@@ -5,7 +5,6 @@ import { ArrowDropDown, Menu } from '@material-ui/icons'
 import Form from 'react-standalone-form'
 import Dropdown from './Dropdown'
 import Logo from './Logo'
-import SearchInput from './SearchInput'
 import Text from './Text'
 import Loader from './Loader'
 
@@ -51,15 +50,7 @@ const useStyles = makeStyles(theme => ({
     zIndex: theme.zIndex.drawer + 1,
   },
   logo: {
-    marginRight: theme.spacing(2),
-    [theme.breakpoints.down('xs')]: {
-      display: 'none',
-    },
-  },
-  search: {
-    [theme.breakpoints.down('sm')]: {
-      width: '50%',
-    },
+    marginRight: theme.spacing(2)
   },
   name: {
     marginLeft: theme.spacing(1),

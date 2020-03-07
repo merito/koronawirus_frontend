@@ -5,9 +5,6 @@ import './App.css'
 import Layout from './components/Layout'
 import ContentWrapper from './components/ContentWrapper'
 import LocationTab from './components/LocationTab'
-import SearchResults from './components/SearchResults'
-import BackToSearch from './components/BackToSearch'
-// import PhotosForm from './components/PhotosForm'
 import Info from './components/Info'
 import NavBarContainer from './containers/NavBarContainer'
 import MapContainer from './containers/MapContainer'
@@ -16,7 +13,6 @@ import SelectedLocationContainer from './containers/SelectedLocationContainer'
 
 const App = ({ history, location: { pathname } }) => {
   const [cachedLocation, setCachedLocation] = React.useState()
-  const [searchResults, setSearchResults] = React.useState([])
   const isLocationTabOpen = location.pathname.startsWith('/location') || location.pathname.startsWith('/search')
   const editMode = pathname.endsWith('/edit') || pathname.endsWith('/new')
   const mapRef = React.useRef()
@@ -32,10 +28,7 @@ const App = ({ history, location: { pathname } }) => {
 
   return (
     <Layout appBar={
-      <NavBarContainer setSearchResults={results => {
-        setSearchResults(results)
-        setCachedLocation(null)
-      }} />
+      <NavBarContainer />
     }>
 
       <LocationTab
@@ -49,54 +42,22 @@ const App = ({ history, location: { pathname } }) => {
         isLocationTabOpen={isLocationTabOpen}
       >
         <Switch>
-          <Route exact path='/search'>
-            <SearchResults
-              items={searchResults}
-              setCachedLocation={location => {
-                setCachedLocation(location)
-                history.push(`/location/${location.id}`)
-              }}
-              history={history}
-            />
-          </Route>
 
           <Route exact path='/location/:id'>
             <SelectedLocationContainer
               cachedLocation={cachedLocation}
               setCachedLocation={setCachedLocation}
             />
-            {searchResults.length
-              ? <BackToSearch onClick={() => {
-                history.push('/search')
-                setCachedLocation(null)
-              }} />
-              : null
-            }
           </Route>
 
-          {/* <Route exact path='/location/:id/photos'>
-            <ContentWrapper>
-              <Typography variant='h4' gutterBottom>{<Text id='actions.editPhotos}</Typography>
-              <PhotosForm
-                locationData={cachedLocation}
-                onSubmitLocation={files => onImageUpload(files)}
-                cancel={() => setLocationTabContent('markerInfo')}
-              />
-            </ContentWrapper>
-          </Route> */}
         </Switch>
       </LocationTab>
 
       <MapContainer
         openLocationTab={point => {
-          setSearchResults([])
           setCachedLocation(point)
           history.push(`/location/${point.id}`)
         }}
-        // openAddMarkerTab={({ lat, lng: lon }) => {
-        //   setCachedLocation({ location: { lat, lon } })
-        //   history.push('/location/new')
-        // }}
         closeTab={() => history.push('/')}
         updateCoordinates={({ lat, lng: lon }) => {
           setCachedLocation({ ...cachedLocation, location: { lon, lat } })
