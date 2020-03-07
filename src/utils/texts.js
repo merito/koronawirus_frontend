@@ -13,7 +13,9 @@ export default {
       infected: 'Zarażeni',
       deaths: 'Zmarli',
       cured: 'Wyleczeni',
-      lastUpdate: 'Ostatnia aktualizacja'
+      lastUpdate: 'Ostatnia aktualizacja',
+      description: 'Szczegóły',
+      source: 'Źródła'
     },
     locationType: {
       active: 'Zarażeni',
@@ -48,7 +50,9 @@ export default {
       infected: 'Infected',
       deaths: 'Deaths',
       cured: 'Cured',
-      lastUpdate: 'Last update'
+      lastUpdate: 'Last update',
+      description: 'Details',
+      source: 'Sources'
     },
     locationType: {
       active: 'Infected',

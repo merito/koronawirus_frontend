@@ -48,6 +48,20 @@ const LocationInfo = ({
           variant='body1'
           gutterBottom
         ><strong><Text id='locationInfo.cured' />:</strong> {selectedLocation.cured}</Typography>
+
+        {selectedLocation.description &&
+          <Typography
+            variant='body1'
+            gutterBottom
+          ><strong><Text id='locationInfo.description' />:</strong> {selectedLocation.description}</Typography>}
+
+          {selectedLocation.source &&
+            <Typography
+              variant='body1'
+              gutterBottom
+            ><strong><Text id='locationInfo.source' />:</strong> {selectedLocation.source}</Typography>}
+
+
       </div>
 
       <div className={classes.footer}>
