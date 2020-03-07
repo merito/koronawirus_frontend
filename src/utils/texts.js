@@ -34,7 +34,7 @@ export default {
       content: `Autor nie ponosi odpowiedzialności za dane przedstawione na stronie. Używasz strony na własne ryzyko.
       Na mapie znajdują się informacje których źródłem jest Ministerstwo Zdrowia - https://www.gov.pl/web/koronawirus
 
-      Kod aplikacji bazuje na https://github.com/wiating-app/frontend autor Michał Kokociński`
+      Kod aplikacji bazuje na https://github.com/wiating-app/frontend (autor Michał Kokociński)`
     }
   },
 
@@ -73,7 +73,7 @@ export default {
       content: `Autor nie ponosi odpowiedzialności za dane przedstawione na stronie. Używasz strony na własne ryzyko.
       Na mapie znajdują się informacje których źródłem jest Ministerstwo Zdrowia - https://www.gov.pl/web/koronawirus
 
-      Based on https://github.com/wiating-app/frontend author Michał Kokociński`
+      Based on https://github.com/wiating-app/frontend (author Michał Kokociński)`
     }
   },
 }
