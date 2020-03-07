@@ -63,7 +63,6 @@ const Map = React.forwardRef(({
     // Check whether viewport really changed to prevent a multiple calls for the
     // same data.
     if (JSON.stringify(bounds) !== JSON.stringify(previousBounds)) {
-      props.loadMapMarkers(bounds)
       setPreviousBounds(bounds)
     }
   }

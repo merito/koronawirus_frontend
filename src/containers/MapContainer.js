@@ -4,12 +4,12 @@ import api, { CancelToken, isCancel } from '../api'
 import { useCurrentLocation } from '../utils/CurrentLocationProvider'
 import Map from '../components/Map'
 import Text from '../components/Text'
+import { points } from '../../data'
 
 let cancelRequest
 
 
 const MapContainer = React.forwardRef((props, ref) => {
-  const [points, setPoints] = React.useState()
   const [initalPosition, setInitalPosition] = React.useState()
   const { enqueueSnackbar } = useSnackbar()
   const { location, loading, error } = useCurrentLocation()
@@ -17,42 +17,9 @@ const MapContainer = React.forwardRef((props, ref) => {
 
   const mapRef = React.useRef()
 
-  const loadMapMarkers = async bounds => {
-    const { _northEast, _southWest } = bounds
-    try {
-      // Cancel the previous request if it is still running.
-      cancelRequest && cancelRequest()
-      const { data: { points } } = await api.post('get_points', {
-        top_right: {
-          lat: _northEast.lat,
-          lon: _northEast.lng,
-        },
-        bottom_left: {
-          lat: _southWest.lat,
-          lon: _southWest.lng,
-        },
-      }, {
-        cancelToken: new CancelToken(function executor(c) {
-          // An executor function receives a cancel function as a parameter
-          cancelRequest = c
-        }),
-      })
-      setPoints(points)
-    } catch (error) {
-      if (!isCancel(error)) {
-        enqueueSnackbar(<Text id='connectionProblem.map' />, { variant: 'error' })
-      } else {
-        process.env.NODE_ENV === 'development' && console.log('Previous request canceled.')
-      }
-    }
-  }
-
   React.useImperativeHandle(ref, () => ({
     setActiveMarker(coords) {
       mapRef.current.setActiveMarker(coords)
-    },
-    loadMapMarkers() {
-      mapRef.current.loadMapMarkers()
     },
   }))
 
@@ -72,9 +39,6 @@ const MapContainer = React.forwardRef((props, ref) => {
 
   return (
     <Map
-      // isLoggedIn={isLoggedIn}
-      // setStoredPosition={coords => setStoredPosition(coords)}
-      loadMapMarkers={viewport => loadMapMarkers(viewport)}
       points={points}
       currentLocation={location}
       center={initalPosition && initalPosition.center}

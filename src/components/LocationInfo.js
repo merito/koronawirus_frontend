@@ -59,7 +59,10 @@ const LocationInfo = ({
             <Typography
               variant='body1'
               gutterBottom
-            ><strong><Text id='locationInfo.source' />:</strong> {selectedLocation.source}</Typography>}
+            ><strong><Text id='locationInfo.source' />:</strong> {
+              selectedLocation.source.map((object, i) => <div><a href={object}>{object}</a></div> )}
+              </Typography>}
+
 
 
       </div>

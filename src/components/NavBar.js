@@ -12,34 +12,16 @@ import Loader from './Loader'
 
 const NavBar = ({
   links,
-  onSearch,
   language,
   languages,
   setLanguage,
 }) => {
   const classes = useStyles()
-  const [searchLoading, setSearchLoading] = React.useState()
 
   return (
     <AppBar position='relative' className={classes.root}>
       <Toolbar>
         <Logo className={classes.logo} />
-        <Form
-          fields={['phrase']}
-          callbackOnChange={async fields => {
-            setSearchLoading(true)
-            await onSearch(fields.phrase)
-            setSearchLoading(false)
-          }}
-          className={classes.search}
-        >
-          <SearchInput
-            name='phrase'
-            // placeholder={<Text id='search' />} TODO: Placeholder translation support.
-            noBottomGutter
-            loading={searchLoading}
-          />
-        </Form>
         <div className={classes.grow} />
         <Dropdown
           items={languages.map(lang => ({

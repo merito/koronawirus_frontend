@@ -7,6 +7,7 @@ import api from '../api'
 import LocationInfo from '../components/LocationInfo'
 import Loader from '../components/Loader'
 import Text from '../components/Text'
+import { points, getPointById } from '../../data'
 
 
 const SelectedLocationContainer = ({
@@ -29,7 +30,7 @@ const SelectedLocationContainer = ({
     } else {
       const handleAsync = async () => {
         try {
-          const { data } = await api.post('get_point', { id })
+          const data = await getPointById(id, points)
           setLocation(data)
           setCachedLocation(data)
         } catch (error) {
