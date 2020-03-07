@@ -151,20 +151,6 @@ const Map = React.forwardRef(({
       {(!props.isLocationTabOpen || !isPhone) &&
         <>
           <ZoomControl position='topright' />
-          <Control position='topright' className='leaflet-bar'>
-            <a
-              className={classes.customControl}
-              onClick={() => props.currentLocation &&
-                mapRef.current.leafletElement.flyTo(props.currentLocation)
-              }
-              disabled={!props.currentLocation}
-            >
-              {props.currentLocation
-                ? <GpsFixed className={classes.customControlIcon} />
-                : <GpsNotFixed className={classes.customControlIcon} />
-              }
-            </a>
-          </Control>
         </>
       }
       <ScaleControl position='bottomright' imperial={false} />
