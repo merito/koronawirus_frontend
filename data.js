@@ -8,7 +8,7 @@ var points = [
     'infected': 2,
     'type': 'ACTIVE',
     'created_timestamp': '1583530394',
-    'last_modified_timestamp': '1583530394',
+    'last_modified_timestamp': '1583611118',
     'description': 'Pacjent hospitalizowany w szpitalu w Ostródzie to osoba, która podróżowała w autobusie z  tzw. pacjentem zero (u niego po raz pierwszy stwierdzono nowego wirusa), który zaraził się w Niemczech i przebywa teraz w szpitalu w Zielonej Górze. - Otrzymaliśmy informację o pozytywnym wyniku jeszcze jednego pasażera autobusu. Pacjent ten był w kwarantannie domowej. W tej chwili przebywa w szpitalu w Ostródzie i czuje się dobrze – mówi prof. Łukasz Szumowski.',
     'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce', 'https://www.gov.pl/web/koronawirus/kolejny-potwierdzony-przypadek-koronawirusa-w-polsce']
   }, {
