@@ -115,6 +115,7 @@ const Map = React.forwardRef(({
               html: infected,
               className: type,
               iconSize: [(1+(0.05*infected))*35, (1+(0.05*infected))*35],
+              iconAnchor: [20, 40]
             })}
             position={[lat, lon]}
             onClick={() => {
@@ -129,7 +130,7 @@ const Map = React.forwardRef(({
           icon={new Icon({
             iconUrl: '/location-icons/point.svg',
             iconSize: [50, 50],
-            iconAnchor: [20, 20],
+            iconAnchor: [25, 40],
           })}
           zIndexOffset={1000}
           position={activeMarker}
