@@ -9,6 +9,7 @@ export default {
     loading: 'Ładowanie',
     search: 'Szukaj',
     backToResults: 'Powrót do wyników',
+    data: 'Dane',
     locationInfo: {
       infected: 'Zarażeni',
       deaths: 'Zmarli',
@@ -48,6 +49,7 @@ export default {
     loading: 'Loading',
     search: 'Search',
     backToResults: 'Back to results',
+    data: 'Data',
     locationInfo: {
       infected: 'Infected',
       deaths: 'Deaths',

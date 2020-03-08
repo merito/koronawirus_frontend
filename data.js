@@ -77,6 +77,16 @@ var points = [
 ];
 export {points};
 
+export function getLastUpdate(points) {
+  var index, lastUpdate='1583530394';
+  for (index in points) {
+    if (Number(points[index].last_modified_timestamp) > Number(lastUpdate)) {
+      lastUpdate = points[index].last_modified_timestamp
+    }
+  }
+  return lastUpdate;
+}
+
 export function getPointById(id, points) {
   var index;
   for (index in points) {
