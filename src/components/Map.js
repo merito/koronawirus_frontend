@@ -130,7 +130,7 @@ const Map = React.forwardRef(({
           icon={new Icon({
             iconUrl: '/location-icons/point.svg',
             iconSize: [50, 50],
-            iconAnchor: [25, 40],
+            iconAnchor: [25, 50],
           })}
           zIndexOffset={1000}
           position={activeMarker}
