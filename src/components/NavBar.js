@@ -7,9 +7,11 @@ import Dropdown from './Dropdown'
 import Logo from './Logo'
 import Text from './Text'
 import Loader from './Loader'
+import { getInfectedNumber } from '../../data'
 
 
 const NavBar = ({
+  points,
   links,
   language,
   languages,
@@ -22,6 +24,9 @@ const NavBar = ({
       <Toolbar>
         <Logo className={classes.logo} />
         <div className={classes.grow} />
+        <Typography
+          variant='h6'
+        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}</Typography>
         <Dropdown
           items={languages.map(lang => ({
             label: lang.toUpperCase(),

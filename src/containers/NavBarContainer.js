@@ -6,7 +6,7 @@ import { LanguageContext } from '../utils/TranslationsProvider'
 
 const languages = ['pl', 'en']
 
-const NavBarContainer = ({ history }) => {
+const NavBarContainer = ({ points, history }) => {
   const [language, setLanguage] = React.useContext(LanguageContext)
 
 
@@ -16,6 +16,7 @@ const NavBarContainer = ({ history }) => {
 
   return (
     <NavBar
+      points={points}
       links={links}
       language={language}
       languages={languages}

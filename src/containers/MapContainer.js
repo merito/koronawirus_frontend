@@ -3,12 +3,11 @@ import { useSnackbar } from 'notistack'
 import api, { CancelToken, isCancel } from '../api'
 import Map from '../components/Map'
 import Text from '../components/Text'
-import { points } from '../../data'
 
 let cancelRequest
 
 
-const MapContainer = React.forwardRef((props, ref) => {
+const MapContainer = React.forwardRef((props, ref, points) => {
   const [initalPosition, setInitalPosition] = React.useState()
   const { enqueueSnackbar } = useSnackbar()
   const defaultPosition = [51.919231, 19.134422]

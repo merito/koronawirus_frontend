@@ -85,3 +85,27 @@ export function getPointById(id, points) {
     }
   }
  }
+
+ export function getInfectedNumber(points) {
+   var index, sum=0;
+   for (index in points) {
+     sum += points[index].infected
+   }
+   return sum;
+ }
+
+ export function getCuredNumber(points) {
+   var index, sum=0;
+   for (index in points) {
+     sum += points[index].cured
+   }
+   return sum;
+ }
+
+ export function getDeathsNumber(points) {
+   var index, sum=0;
+   for (index in points) {
+     sum += points[index].deaths
+   }
+   return sum;
+ }
