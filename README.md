@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2c9f2f32-c413-4b16-95a4-92b8ac302928/deploy-status)](https://app.netlify.com/sites/wiating/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3d968acf-bcb7-4cff-b9ba-050ae4b6983e/deploy-status)](https://app.netlify.com/sites/koronawirus/deploys)
 
 ## Available Scripts
 
@@ -7,16 +7,6 @@ In the project directory, you can run:
 ### Local setup
 
 Clone the repository and Install all dependencies with `yarn install` command.
-
-If you want to let authentication work on your local, create `.env` file in root
-of a project with the following content:
-
-```
-REACT_APP_AUTH_CLIENT=123456
-```
-
-Replace `123456` with a valid client ID.
-
 
 ### `yarn start`
 
