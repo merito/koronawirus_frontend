@@ -56,13 +56,14 @@ var points = [
     'location': {'lat': '50.091490', 'lon': '18.219813'},
     'deaths': 0,
     'cured': 0,
-    'infected': 2,
+    'infected': 5,
     'type': 'ACTIVE',
     'created_timestamp': '1583671445',
-    'last_modified_timestamp': '1583697852',
-    'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjentka to osoba w sile wieku, która była na kwarantannie i trafiła z niej prosto do szpitala.',
+    'last_modified_timestamp': '1583751619',
+    'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjentka to osoba w sile wieku, która była na kwarantannie i trafiła z niej prosto do szpitala. Mieliśmy dwóch pacjentów już oznaczonych, natomiast dzisiaj przybyły do nas następne trzy osoby, które wcześniej już zostały skierowane z kwarantanny przez sanepid, miały potwierdzony wynik dodatni.',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1236628432676675585?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1236628432676675585&ref_url=https%3A%2F%2Fwiadomosci.gazeta.pl%2Fwiadomosci%2F7%2C114883%2C25768896%2Cministerstwo-zdrowia-sa-dwa-nowe-przypadki-koronawirusa-w.html',
-              'https://twitter.com/MZ_GOV_PL/status/1236731347571478531']
+              'https://twitter.com/MZ_GOV_PL/status/1236731347571478531',
+              'https://www.pap.pl/aktualnosci/news%2C601183%2Cw-szpitalu-w-raciborzu-juz-piec-osob-z-koronawirusem.html']
   },{
     'id': '22',
     'name': 'Warszawa',
