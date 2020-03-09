@@ -91,6 +91,18 @@ var points = [
     'last_modified_timestamp': '1583746863',
     'description': 'To pierwszy przypadek zarażenia stwierdzony w Krakowie i 12 potwierdzony jak dotąd w Polsce. Mężczyzna trafił do szpitala w sobotę wieczorem. W ostatnim czasie przebywał w północnych Włoszech. Jego stan jest dobry, stabilny.',
     'source': ['https://www.pap.pl/aktualnosci/news%2C601134%2Cszpital-pierwszy-przypadek-zarazenia-koronawirusem-w-krakowie.html']
+  },{
+    'id': '24',
+    'name': 'Poznań',
+    'location': {'lat': '52.406452', 'lon': '16.925044'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 1,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583767696',
+    'last_modified_timestamp': '1583767696',
+    'description': 'Mamy nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z woj. wielkopolskiego, która przebywa w szpitalu w Poznaniu. W sumie mamy 17 potwierdzonych przypadków.',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237037259674845184']
   }
 ];
 export {points};
