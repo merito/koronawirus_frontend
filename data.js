@@ -76,6 +76,18 @@ var points = [
     'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Warszawy jest osobą młodą, która wróciła w ostatnim czasie z Włoch.',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1236628432676675585?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1236628432676675585&ref_url=https%3A%2F%2Fwiadomosci.gazeta.pl%2Fwiadomosci%2F7%2C114883%2C25768896%2Cministerstwo-zdrowia-sa-dwa-nowe-przypadki-koronawirusa-w.html',
               'https://twitter.com/MZ_GOV_PL/status/1236731347571478531']
+  },{
+    'id': '23',
+    'name': 'Kraków',
+    'location': {'lat': '50.064629', 'lon': '19.944961'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 1,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583746863',
+    'last_modified_timestamp': '1583746863',
+    'description': 'To pierwszy przypadek zarażenia stwierdzony w Krakowie i 12 potwierdzony jak dotąd w Polsce. Mężczyzna trafił do szpitala w sobotę wieczorem. W ostatnim czasie przebywał w północnych Włoszech. Jego stan jest dobry, stabilny.',
+    'source': ['https://www.pap.pl/aktualnosci/news%2C601134%2Cszpital-pierwszy-przypadek-zarazenia-koronawirusem-w-krakowie.html']
   }
 ];
 export {points};
