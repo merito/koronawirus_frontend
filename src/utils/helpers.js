@@ -13,7 +13,7 @@ export const formatDate = timestamp => {
 
 export const formatDateTime = timestamp => {
   const dateString = fromUnixTime(timestamp)
-  return format(new Date(dateString), 'dd.MM.yyyy HH:MM')
+  return format(new Date(dateString), 'dd.MM.yyyy HH:mm')
 }
 
 export function getIconUrl(type) {

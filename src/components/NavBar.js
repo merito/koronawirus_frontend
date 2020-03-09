@@ -32,7 +32,7 @@ const NavBar = ({
           variant='h6'
         ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}</Typography>
         <Typography
-          variant='h7'
+          variant='body2'
         ><Text id='data' />: {formatDateTime(getLastUpdate(points))}</Typography>
         </div>
         <Dropdown

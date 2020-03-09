@@ -33,11 +33,12 @@ var points = [
     'infected': 3,
     'type': 'ACTIVE',
     'created_timestamp': '1583530663',
-    'last_modified_timestamp': '1583752885',
+    'last_modified_timestamp': '1583754314',
     'description': 'Czwarty z pacjentów też zgłosił się do lokalnych służb sanitarno-epidemiologicznych, ponieważ miał objawy, a przebywał w Wielkiej Brytanii, która jest zaliczana do krajów o wysokim ryzyku zakażenia. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Wrocławia to osoba starsza, po kontakcie z osobą bliską, która jest obecnie na hospitalizacji za granicą. 16 zarażona to kobieta (z wypowiedzi ministra zdrowia).',
     'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce',
               'https://twitter.com/MZ_GOV_PL/status/1236731347571478531',
-              'https://twitter.com/MZ_GOV_PL/status/1236972289247326214']
+              'https://twitter.com/MZ_GOV_PL/status/1236972289247326214',
+              'https://www.pap.pl/aktualnosci/news%2C601218%2Cmz-16-potwierdzonych-przypadkow-koronawirusa-w-polsce.html']
   },
   {
     'id': '20',
@@ -94,14 +95,9 @@ var points = [
 ];
 export {points};
 
-export function getLastUpdate(points) {
-  var index, lastUpdate='1583530394';
-  for (index in points) {
-    if (Number(points[index].last_modified_timestamp) > Number(lastUpdate)) {
-      lastUpdate = points[index].last_modified_timestamp
-    }
-  }
-  return lastUpdate;
+export const getLastUpdate = points => {
+  const timestamps = points.map(point => Number(point.last_modified_timestamp))
+  return String(Math.max(...timestamps, 1583530394))
 }
 
 export function getPointById(id, points) {
@@ -113,7 +109,7 @@ export function getPointById(id, points) {
   }
  }
 
- export function getInfectedNumber(points) {
+export function getInfectedNumber(points) {
    var index, sum=0;
    for (index in points) {
      sum += points[index].infected
@@ -121,7 +117,7 @@ export function getPointById(id, points) {
    return sum;
  }
 
- export function getCuredNumber(points) {
+export function getCuredNumber(points) {
    var index, sum=0;
    for (index in points) {
      sum += points[index].cured
@@ -129,7 +125,7 @@ export function getPointById(id, points) {
    return sum;
  }
 
- export function getDeathsNumber(points) {
+export function getDeathsNumber(points) {
    var index, sum=0;
    for (index in points) {
      sum += points[index].deaths
