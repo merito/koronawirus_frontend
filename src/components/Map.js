@@ -85,6 +85,9 @@ const Map = React.forwardRef(({
       zoomControl={false}
       onMoveEnd={() => loadMapMarkers()}
       onClick={e => {
+        if (props.isLocationTabOpen) {
+          props.closeTab()
+        }
         setActiveMarker(false)
       }}
     >
