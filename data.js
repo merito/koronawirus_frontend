@@ -118,6 +118,18 @@ var points = [
     'last_modified_timestamp': '1583846100',
     'description': 'Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie.',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237366146589954049']
+  },{
+    'id': '26',
+    'name': 'Bełżyce',
+    'location': {'lat': '51.176956', 'lon': '22.292634'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 1,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583866308',
+    'last_modified_timestamp': '1583866308',
+    'description': 'Mamy jeden nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzony wynik dotyczy mężczyzny z wojewodztwa lubelskiego, który przebywa w szpitalu w Bełżycach. Pacjent to osoba w sile wieku. To 22 przypadek zakażenia w Polsce.',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237449974293639168']
   }
 ];
 
