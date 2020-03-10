@@ -163,7 +163,7 @@ const Map = React.forwardRef(({
 })
 
 Map.defaultProps = {
-  zoom: 7,
+  zoom: 6,
 }
 
 const useStyles = makeStyles(theme => ({
