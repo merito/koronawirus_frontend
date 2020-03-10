@@ -7,11 +7,16 @@ import Dropdown from './Dropdown'
 import Logo from './Logo'
 import Text from './Text'
 import Loader from './Loader'
+import BigNumber from './BigNumber'
 import {
   getInfectedNumber,
+  getCuredNumber,
+  getDeathsNumber,
   getLastUpdate
  } from '../../data'
  import { formatDateTime } from '../utils/helpers'
+
+
 
 
 const NavBar = ({
@@ -28,13 +33,10 @@ const NavBar = ({
       <Toolbar>
         <Logo className={classes.logo} />
         <div className={classes.grow} />
-        <div><Typography
-          variant='h6'
-        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}</Typography>
-        <Typography
-          variant='body2'
-        ><Text id='data' />: {formatDateTime(getLastUpdate(points))}</Typography>
-        </div>
+        <BigNumber
+          className={classes.bignumber}
+          points={points}
+        />
         <Dropdown
           items={languages.map(lang => ({
             label: lang.toUpperCase(),
