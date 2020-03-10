@@ -72,14 +72,15 @@ var points = [
     'location': {'lat': '52.229832', 'lon': '21.011689'},
     'deaths': 0,
     'cured': 0,
-    'infected': 3,
+    'infected': 4,
     'type': 'ACTIVE',
     'created_timestamp': '1583671445',
-    'last_modified_timestamp': '1583833648',
-    'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Warszawy jest osobą młodą, która wróciła w ostatnim czasie z Włoch. - Mamy 18 przypadków zarażenia koronawirusem - powiedział minister zdrowia Łukasz Szumowski. 18. zarażony znajduje się w województwie mazowieckim, jego stan jest dobry.',
+    'last_modified_timestamp': '1583846100',
+    'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Warszawy jest osobą młodą, która wróciła w ostatnim czasie z Włoch. - Mamy 18 przypadków zarażenia koronawirusem - powiedział minister zdrowia Łukasz Szumowski. 18. zarażony znajduje się w województwie mazowieckim, jego stan jest dobry. Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie.',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1236628432676675585?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1236628432676675585&ref_url=https%3A%2F%2Fwiadomosci.gazeta.pl%2Fwiadomosci%2F7%2C114883%2C25768896%2Cministerstwo-zdrowia-sa-dwa-nowe-przypadki-koronawirusa-w.html',
               'https://twitter.com/MZ_GOV_PL/status/1236731347571478531',
-              'https://wiadomosci.onet.pl/kraj/koronawirus-kolejne-przypadki-w-polsce-czerwona-strefa-we-wloszech/pyd8x9b']
+              'https://wiadomosci.onet.pl/kraj/koronawirus-kolejne-przypadki-w-polsce-czerwona-strefa-we-wloszech/pyd8x9b',
+              'https://twitter.com/MZ_GOV_PL/status/1237366146589954049']
   },{
     'id': '23',
     'name': 'Kraków',
@@ -104,6 +105,18 @@ var points = [
     'last_modified_timestamp': '1583767696',
     'description': 'Mamy nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z woj. wielkopolskiego, która przebywa w szpitalu w Poznaniu. W sumie mamy 17 potwierdzonych przypadków.',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237037259674845184']
+  },{
+    'id': '25',
+    'name': 'Cieszyn',
+    'location': {'lat': '49.749722', 'lon': '18.635475'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 2,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583846100',
+    'last_modified_timestamp': '1583846100',
+    'description': 'Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie.',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237366146589954049']
   }
 ];
 
