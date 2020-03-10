@@ -98,7 +98,7 @@ const Map = React.forwardRef(({
       <MarkerClusterGroup
         showCoverageOnHover={false}
         maxClusterRadius={60}
-        disableClusteringAtZoom={11}
+        disableClusteringAtZoom={5}
         spiderfyOnMaxZoom={false}
         iconCreateFunction={cluster => {
           const count = cluster.getChildCount()
