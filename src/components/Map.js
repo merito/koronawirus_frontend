@@ -195,7 +195,7 @@ const useStyles = makeStyles(theme => ({
       alignItems: 'center',
       justifyContent: 'center',
       fontWeight: 'bold',
-      color: '#000000',
+      color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
     },
     '& .RESTRICTIONS': {
@@ -208,7 +208,7 @@ const useStyles = makeStyles(theme => ({
       alignItems: 'center',
       justifyContent: 'center',
       fontWeight: 'bold',
-      color: '#000000',
+      color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
     },
     '& .CURED': {
@@ -221,7 +221,7 @@ const useStyles = makeStyles(theme => ({
       alignItems: 'center',
       justifyContent: 'center',
       fontWeight: 'bold',
-      color: '#000000',
+      color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
     },
   },
