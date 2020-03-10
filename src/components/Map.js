@@ -197,6 +197,7 @@ const useStyles = makeStyles(theme => ({
       fontWeight: 'bold',
       color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+      fontSize: 'medium'
     },
     '& .RESTRICTIONS': {
       backgroundColor: 'transparent',
@@ -210,6 +211,7 @@ const useStyles = makeStyles(theme => ({
       fontWeight: 'bold',
       color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+      fontSize: 'medium'
     },
     '& .CURED': {
       backgroundColor: 'transparent',
@@ -223,6 +225,7 @@ const useStyles = makeStyles(theme => ({
       fontWeight: 'bold',
       color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+      fontSize: 'medium'
     },
   },
   popup: {
