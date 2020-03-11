@@ -5,12 +5,12 @@ var points = [
     'location': {'lat': '53.696319', 'lon': '19.964721'},
     'deaths': 0,
     'cured': 0,
-    'infected': 2,
+    'infected': 4,
     'type': 'ACTIVE',
     'created_timestamp': '1583530394',
-    'last_modified_timestamp': '1583611118',
-    'description': 'Pacjent hospitalizowany w szpitalu w Ostródzie to osoba, która podróżowała w autobusie z  tzw. pacjentem zero (u niego po raz pierwszy stwierdzono nowego wirusa), który zaraził się w Niemczech i przebywa teraz w szpitalu w Zielonej Górze. - Otrzymaliśmy informację o pozytywnym wyniku jeszcze jednego pasażera autobusu. Pacjent ten był w kwarantannie domowej. W tej chwili przebywa w szpitalu w Ostródzie i czuje się dobrze – mówi prof. Łukasz Szumowski.',
-    'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce', 'https://www.gov.pl/web/koronawirus/kolejny-potwierdzony-przypadek-koronawirusa-w-polsce']
+    'last_modified_timestamp': '1583947668',
+    'description': 'Pacjent hospitalizowany w szpitalu w Ostródzie to osoba, która podróżowała w autobusie z  tzw. pacjentem zero (u niego po raz pierwszy stwierdzono nowego wirusa), który zaraził się w Niemczech i przebywa teraz w szpitalu w Zielonej Górze. - Otrzymaliśmy informację o pozytywnym wyniku jeszcze jednego pasażera autobusu. Pacjent ten był w kwarantannie domowej. W tej chwili przebywa w szpitalu w Ostródzie i czuje się dobrze – mówi prof. Łukasz Szumowski. Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce.',
+    'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce', 'https://www.gov.pl/web/koronawirus/kolejny-potwierdzony-przypadek-koronawirusa-w-polsce', 'https://twitter.com/MZ_GOV_PL/status/1237790884726480898']
   }, {
     'id': '18',
     'name': 'Szczecin',
@@ -176,18 +176,6 @@ var points = [
     'deaths': 0,
     'cured': 0,
     'infected': 1,
-    'type': 'ACTIVE',
-    'created_timestamp': '1583947668',
-    'last_modified_timestamp': '1583947668',
-    'description': 'Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce.',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1237790884726480898']
-  },{
-    'id': '30',
-    'name': 'Ostróda',
-    'location': {'lat': '53.696329', 'lon': '19.964289'},
-    'deaths': 0,
-    'cured': 0,
-    'infected': 2,
     'type': 'ACTIVE',
     'created_timestamp': '1583947668',
     'last_modified_timestamp': '1583947668',
