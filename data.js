@@ -113,12 +113,13 @@ var points = [
     'location': {'lat': '49.749722', 'lon': '18.635475'},
     'deaths': 0,
     'cured': 0,
-    'infected': 2,
+    'infected': 3,
     'type': 'ACTIVE',
     'created_timestamp': '1583846100',
-    'last_modified_timestamp': '1583846100',
-    'description': 'Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie.',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1237366146589954049']
+    'last_modified_timestamp': '1583934500',
+    'description': 'Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie. Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce.',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237366146589954049',
+              'https://twitter.com/MZ_GOV_PL/status/1237734191300857856']
   },{
     'id': '26',
     'name': 'Bełżyce',
@@ -155,6 +156,18 @@ var points = [
     'last_modified_timestamp': '1583910784',
     'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: młodego mężczyzny z woj. mazowieckiego (Warszawa), kobiety z woj. podkarpackiego (Łańcut) w sile wieku oraz kobiety z woj. lubelskiego (Lublin) także w sile wieku. W sumie to już 25 przypadków zakażenia koronawirusem w Polsce.',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237636589112655872']
+  },{
+    'id': '28',
+    'name': 'Łódź',
+    'location': {'lat': '51.759234', 'lon': '19.455663'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 1,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583934500',
+    'last_modified_timestamp': '1583934500',
+    'description': 'Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce.',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237734191300857856']
   }
 ];
 
