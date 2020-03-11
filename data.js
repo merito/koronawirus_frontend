@@ -101,12 +101,13 @@ var points = [
     'location': {'lat': '52.406452', 'lon': '16.925044'},
     'deaths': 0,
     'cured': 0,
-    'infected': 1,
+    'infected': 2,
     'type': 'ACTIVE',
     'created_timestamp': '1583767696',
     'last_modified_timestamp': '1583767696',
-    'description': 'Mamy nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z woj. wielkopolskiego, która przebywa w szpitalu w Poznaniu. W sumie mamy 17 potwierdzonych przypadków.',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1237037259674845184']
+    'description': 'Mamy nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z woj. wielkopolskiego, która przebywa w szpitalu w Poznaniu. W sumie mamy 17 potwierdzonych przypadków. Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce.',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237037259674845184',
+              'https://twitter.com/MZ_GOV_PL/status/1237790884726480898']
   },{
     'id': '25',
     'name': 'Cieszyn',
@@ -168,6 +169,30 @@ var points = [
     'last_modified_timestamp': '1583934500',
     'description': 'Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce.',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237734191300857856']
+  },{
+    'id': '29',
+    'name': 'Opole',
+    'location': {'lat': '50.667905', 'lon': '17.922312'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 1,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583947668',
+    'last_modified_timestamp': '1583947668',
+    'description': 'Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce.',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237790884726480898']
+  },{
+    'id': '30',
+    'name': 'Ostróda',
+    'location': {'lat': '53.696329', 'lon': '19.964289'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 2,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583947668',
+    'last_modified_timestamp': '1583947668',
+    'description': 'Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce.',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237790884726480898']
   }
 ];
 
