@@ -16,6 +16,9 @@ import MarkerClusterGroup from 'react-leaflet-markercluster'
 import 'leaflet/dist/leaflet.css'
 import 'react-leaflet-markercluster/dist/styles.min.css'
 import { getIconUrl } from '../utils/helpers'
+import {
+ FacebookIcon,
+} from 'react-share';
 
 
 const Map = React.forwardRef(({
@@ -158,6 +161,11 @@ const Map = React.forwardRef(({
         </>
       }
       <ScaleControl position='bottomright' imperial={false} />
+      <Control position='bottomright' className='leaflet-bar'>
+        <a href={"https://www.facebook.com/sharer/sharer.php?u=".concat(document.URL)} target="_blank">
+          <FacebookIcon size={'30'} />
+        </a>
+      </Control>
     </MapComponent>
   )
 })
