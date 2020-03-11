@@ -101,10 +101,10 @@ const Map = React.forwardRef(({
       <MarkerClusterGroup
         showCoverageOnHover={false}
         maxClusterRadius={60}
-        disableClusteringAtZoom={5}
+        disableClusteringAtZoom={8}
         spiderfyOnMaxZoom={false}
         iconCreateFunction={cluster => {
-          const count = cluster.getChildCount()
+          const count = cluster.getAllChildMarkers().reduce((total, marker) => marker.options.count + total, 0)
           return new DivIcon({
             html: count,
             className: 'woodboard-cluster',
@@ -117,6 +117,7 @@ const Map = React.forwardRef(({
 
           return <Marker
             key={item.id}
+            count={infected}
             icon={new DivIcon({
               html: infected,
               className: type,
@@ -182,7 +183,7 @@ const useStyles = makeStyles(theme => ({
     },
     '& .woodboard-cluster': {
       backgroundColor: 'transparent',
-      backgroundImage: 'url(/woodboard.svg)',
+      backgroundImage: 'url(/location-icons/cluster.svg)',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
@@ -190,8 +191,9 @@ const useStyles = makeStyles(theme => ({
       alignItems: 'center',
       justifyContent: 'center',
       fontWeight: 'bold',
-      color: '#000000',
+      color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+      fontSize: 'medium'
     },
     '& .ACTIVE': {
       backgroundColor: 'transparent',
