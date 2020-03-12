@@ -1,29 +1,21 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography, Avatar } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
-import { ArrowDropDown, Menu } from '@material-ui/icons'
-import Form from 'react-standalone-form'
+import { AppBar, Toolbar, Typography, useMediaQuery } from '@material-ui/core'
+import { makeStyles, useTheme } from '@material-ui/core/styles'
+import { Menu } from '@material-ui/icons'
 import Dropdown from './Dropdown'
 import Logo from './Logo'
 import Text from './Text'
-import Loader from './Loader'
-import {
-  getInfectedNumber,
-  getDeathsNumber,
-  getLastUpdate
- } from '../../data'
 import { formatDateTime } from '../utils/helpers'
-import { useTheme } from '@material-ui/core/styles'
-import { useMediaQuery } from '@material-ui/core'
-
 
 
 const NavBar = ({
-  points,
   links,
   language,
   languages,
   setLanguage,
+  infectedNumber,
+  deathsNumber,
+  lastUpdate,
 }) => {
   const classes = useStyles()
   const theme = useTheme()
@@ -35,18 +27,22 @@ const NavBar = ({
         <Logo className={classes.logo} />
         <div className={classes.grow} />
         <div>
-        {!isPhone && <Typography
-          variant='h6'
-        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)} <Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography>}
-        {isPhone && <div><Typography
-          variant='h6'
-        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}</Typography>
-        <Typography
-          variant='h6'
-        ><Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography></div>}
-        <Typography
-          variant='body2'
-        ><Text id='data' />: {formatDateTime(getLastUpdate(points))}</Typography>
+          {!isPhone
+            ? <Typography
+              variant='h6'
+            ><Text id='locationInfo.infected' />: {infectedNumber} <Text id='locationInfo.deaths' />: {deathsNumber}</Typography>
+            : <div>
+              <Typography
+                variant='h6'
+              ><Text id='locationInfo.infected' />: {infectedNumber}</Typography>
+              <Typography
+                variant='h6'
+              ><Text id='locationInfo.deaths' />: {deathsNumber}</Typography>
+            </div>
+          }
+          <Typography
+            variant='body2'
+          ><Text id='data' />: {lastUpdate && formatDateTime(lastUpdate)}</Typography>
         </div>
         <Dropdown
           items={languages.map(lang => ({
@@ -59,11 +55,9 @@ const NavBar = ({
           }}
         >{language ? language.toUpperCase() : ''}</Dropdown>
 
-          <Dropdown items={[
-            ...links,
-          ]}>
-              <Menu />
-          </Dropdown>
+        <Dropdown items={links}>
+          <Menu />
+        </Dropdown>
 
       </Toolbar>
     </AppBar>
@@ -76,7 +70,7 @@ const useStyles = makeStyles(theme => ({
     zIndex: theme.zIndex.drawer + 1,
   },
   logo: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   name: {
     marginLeft: theme.spacing(1),

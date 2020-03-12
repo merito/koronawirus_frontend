@@ -1,4 +1,4 @@
-var points = [
+const points = [
   {
     'id': '17',
     'name': 'Ostróda',
@@ -164,7 +164,7 @@ var points = [
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237636589112655872',
               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '28',
+    'id': '29',
     'name': 'Łódź',
     'location': {'lat': '51.759234', 'lon': '19.455663'},
     'deaths': 0,
@@ -177,7 +177,7 @@ var points = [
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237734191300857856',
                'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '29',
+    'id': '30',
     'name': 'Opole',
     'location': {'lat': '50.667905', 'lon': '17.922312'},
     'deaths': 0,
@@ -190,7 +190,7 @@ var points = [
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237790884726480898',
                'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a']
   },{
-    'id': '30',
+    'id': '31',
     'name': 'Sosnowiec',
     'location': {'lat': '50.286202', 'lon': '19.103692'},
     'deaths': 0,
@@ -202,7 +202,7 @@ var points = [
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '31',
+    'id': '32',
     'name': 'Chorzów',
     'location': {'lat': '50.297478', 'lon': '18.954529'},
     'deaths': 0,
@@ -214,7 +214,7 @@ var points = [
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '32',
+    'id': '33',
     'name': 'Zawiercie',
     'location': {'lat': '50.487735', 'lon': '19.416675'},
     'deaths': 0,
@@ -226,7 +226,7 @@ var points = [
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '33',
+    'id': '34',
     'name': 'Oleśnica',
     'location': {'lat': '51.213404', 'lon': '17.390018'},
     'deaths': 0,
@@ -238,7 +238,7 @@ var points = [
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '34',
+    'id': '35',
     'name': 'Rzeszów',
     'location': {'lat': '50.041123', 'lon': '21.999129'},
     'deaths': 0,
@@ -249,17 +249,19 @@ var points = [
     'last_modified_timestamp': '1584002398',
     'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1238019669023481856']
-  }
-];
+  },
+]
 
-export {points};
+export function getAllPoints() {
+  return points
+}
 
-export const getLastUpdate = points => {
+export function getLastUpdate() {
   const timestamps = points.map(point => Number(point.last_modified_timestamp))
   return String(Math.max(...timestamps, 1583530394))
 }
 
-export function getPointById(id, points) {
+export function getPointById(id) {
   var index;
   for (index in points) {
     if (points[index].id == id.toString()){
@@ -268,26 +270,26 @@ export function getPointById(id, points) {
   }
  }
 
-export function getInfectedNumber(points) {
+export function getInfectedNumber() {
    var index, sum=0;
    for (index in points) {
      sum += points[index].infected
    }
    return sum;
- }
+}
 
-export function getCuredNumber(points) {
+export function getCuredNumber() {
    var index, sum=0;
    for (index in points) {
      sum += points[index].cured
    }
    return sum;
- }
+}
 
-export function getDeathsNumber(points) {
+export function getDeathsNumber() {
    var index, sum=0;
    for (index in points) {
      sum += points[index].deaths
    }
    return sum;
- }
+}

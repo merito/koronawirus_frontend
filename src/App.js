@@ -3,13 +3,11 @@ import { Switch, Route, withRouter } from 'react-router-dom'
 import 'react-perfect-scrollbar/dist/css/styles.css'
 import './App.css'
 import Layout from './components/Layout'
-import ContentWrapper from './components/ContentWrapper'
 import LocationTab from './components/LocationTab'
 import Info from './components/Info'
 import NavBarContainer from './containers/NavBarContainer'
 import MapContainer from './containers/MapContainer'
 import SelectedLocationContainer from './containers/SelectedLocationContainer'
-import { points } from '../data'
 
 
 const App = ({ history, location: { pathname } }) => {
@@ -28,10 +26,7 @@ const App = ({ history, location: { pathname } }) => {
   }, [cachedLocation])
 
   return (
-    <Layout appBar={
-      <NavBarContainer
-      points={points}/>
-    }>
+    <Layout appBar={<NavBarContainer />}>
 
       <LocationTab
         closeLocationTab={() => {
@@ -47,7 +42,6 @@ const App = ({ history, location: { pathname } }) => {
 
           <Route exact path='/location/:id'>
             <SelectedLocationContainer
-              points={points}
               cachedLocation={cachedLocation}
               setCachedLocation={setCachedLocation}
             />
@@ -57,7 +51,6 @@ const App = ({ history, location: { pathname } }) => {
       </LocationTab>
 
       <MapContainer
-        points={points}
         openLocationTab={point => {
           setCachedLocation(point)
           history.push(`/location/${point.id}`)
