@@ -1,5 +1,11 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography, useMediaQuery } from '@material-ui/core'
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  useMediaQuery,
+  Box,
+} from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import { Menu } from '@material-ui/icons'
 import Dropdown from './Dropdown'
@@ -26,24 +32,14 @@ const NavBar = ({
       <Toolbar>
         <Logo className={classes.logo} />
         <div className={classes.grow} />
-        <div>
-          {!isPhone
-            ? <Typography
-              variant='h6'
-            ><Text id='locationInfo.infected' />: {infectedNumber} <Text id='locationInfo.deaths' />: {deathsNumber}</Typography>
-            : <div>
-              <Typography
-                variant='h6'
-              ><Text id='locationInfo.infected' />: {infectedNumber}</Typography>
-              <Typography
-                variant='h6'
-              ><Text id='locationInfo.deaths' />: {deathsNumber}</Typography>
-            </div>
-          }
+        <Box textAlign='right'>
+          <Typography variant={isPhone ? 'subtitle2' : 'h6'}>
+            <Text id='locationInfo.infected' />: {infectedNumber} <Text id='locationInfo.deaths' />: {deathsNumber}
+          </Typography>
           <Typography
-            variant='body2'
+            variant='caption'
           ><Text id='data' />: {lastUpdate && formatDateTime(lastUpdate)}</Typography>
-        </div>
+        </Box>
         <Dropdown
           items={languages.map(lang => ({
             label: lang.toUpperCase(),
