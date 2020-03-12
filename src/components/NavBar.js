@@ -52,9 +52,9 @@ const NavBar = ({
     <AppBar position='relative' className={classes.root}>
       <Toolbar className={classes.toolbar}>
         <Logo className={classes.logo} />
-        <div className={ classes.grow} />
+        <div className={classes.grow} />
         <Typography variant='caption' className={classes.date}>
-          {!isPhone && <><Text id='data' />: </>}
+          <span className={classes.noWrap}><Text id='data' />: </span>
           {lastUpdate && formatDateTime(lastUpdate)}
           {' '}
         </Typography>
@@ -122,6 +122,9 @@ const useStyles = makeStyles(theme => ({
   },
   date: {
     marginRight: theme.spacing(1),
+  },
+  noWrap: {
+    whiteSpace: 'no-wrap',
   },
 }))
 
