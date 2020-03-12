@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button, Menu, MenuItem } from '@material-ui/core'
+import {
+  Button,
+  Menu,
+  MenuItem,
+  useMediaQuery,
+} from '@material-ui/core'
+import { useTheme } from '@material-ui/core/styles'
 
 const Dropdown = ({ children, items, anchorOrigin }) => {
   const [anchorEl, setAnchorEl] = React.useState(null)
+  const theme = useTheme()
+  const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget)
@@ -19,6 +27,7 @@ const Dropdown = ({ children, items, anchorOrigin }) => {
         aria-controls='simple-menu'
         color='inherit'
         aria-haspopup='true'
+        size={isPhone ? 'small' : 'medium'}
         onClick={handleClick}
       >{children}</Button>
       <Menu

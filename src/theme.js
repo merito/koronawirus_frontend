@@ -3,7 +3,10 @@ import { createMuiTheme } from '@material-ui/core/styles'
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#000000',
+      main: '#d00000',
+    },
+    secondary: {
+      main: '#388e3c',
     },
   },
   layout: {
@@ -14,6 +17,16 @@ const theme = createMuiTheme({
     MuiFormControl: {
       root: {
         marginBottom: 36,
+      },
+    },
+    MuiChip: {
+      root: {
+        backgroundColor: '#303030',
+        marginBottom: 2,
+      },
+      outlined: {
+        borderColor: 'white',
+        color: 'white',
       },
     },
   },

@@ -5,6 +5,7 @@ import {
   Typography,
   useMediaQuery,
   Box,
+  Chip,
 } from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import { Menu } from '@material-ui/icons'
@@ -26,22 +27,49 @@ const NavBar = ({
 }) => {
   const classes = useStyles()
   const theme = useTheme()
-  const isPhone = useMediaQuery(theme.breakpoints.down('md'))
+  const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
+  const counters = [
+    {
+      label: <Text id='locationInfo.infected' />,
+      value: infectedNumber,
+      color: 'primary',
+    },
+    {
+      label: <Text id='locationInfo.deaths' />,
+      value: deathsNumber,
+      variant: 'outlined',
+      color: '',
+    },
+    {
+      label: <Text id='locationInfo.cured' />,
+      value: curedNumber,
+      color: 'secondary',
+    },
+  ]
 
   return (
     <AppBar position='relative' className={classes.root}>
-      <Toolbar>
+      <Toolbar className={classes.toolbar}>
         <Logo className={classes.logo} />
         <div className={classes.grow} />
         <Box textAlign='right'>
-          <Typography variant={isPhone ? 'subtitle2' : 'h6'}>
-            <Text id='locationInfo.infected' />: {infectedNumber}{' '}
-            <Text id='locationInfo.deaths' />: {deathsNumber}{' '}
-            <Text id='locationInfo.cured' />: {curedNumber}
+          <div>
+            {counters.map((item, index) =>
+              <React.Fragment key={index}>
+                <Chip
+                  icon={item.icon}
+                  size={isPhone ? 'small' : 'medium'}
+                  label={<>{item.label}: {item.value}</>}
+                  color={item.color}
+                  variant={item.variant}
+                />{' '}
+              </React.Fragment>
+            )}
+          </div>
+          <Typography variant='caption'>
+            {!isPhone && <><Text id='data' />: </>}
+            {lastUpdate && formatDateTime(lastUpdate)}
           </Typography>
-          <Typography
-            variant='caption'
-          ><Text id='data' />: {lastUpdate && formatDateTime(lastUpdate)}</Typography>
         </Box>
         <Dropdown
           items={languages.map(lang => ({
@@ -67,6 +95,10 @@ const NavBar = ({
 const useStyles = makeStyles(theme => ({
   root: {
     zIndex: theme.zIndex.drawer + 1,
+  },
+  toolbar: {
+    paddingRight: 0,
+    backgroundColor: theme.palette.grey[900],
   },
   logo: {
     marginRight: theme.spacing(2),
