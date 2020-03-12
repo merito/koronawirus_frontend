@@ -165,19 +165,6 @@ var points = [
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237636589112655872',
               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '28',
-    'name': 'Łódź',
-    'location': {'lat': '51.759234', 'lon': '19.455663'},
-    'deaths': 0,
-    'cured': 0,
-    'infected': 2,
-    'type': 'ACTIVE',
-    'created_timestamp': '1583934500',
-    'last_modified_timestamp': '1583995509',
-    'description': 'Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1237734191300857856',
-               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
-  },{
     'id': '29',
     'name': 'Opole',
     'location': {'lat': '50.667905', 'lon': '17.922312'},
@@ -250,17 +237,32 @@ var points = [
     'last_modified_timestamp': '1584002398',
     'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1238019669023481856']
+  },{
+    'id': '35',
+    'name': 'Łódź',
+    'location': {'lat': '51.759234', 'lon': '19.455663'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 2,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583934500',
+    'last_modified_timestamp': '1583995509',
+    'description': 'Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237734191300857856',
+               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   }
 ];
 
-export {points};
+export function getAllPoints() {
+  return points
+}
 
-export const getLastUpdate = points => {
+export function getLastUpdate() {
   const timestamps = points.map(point => Number(point.last_modified_timestamp))
   return String(Math.max(...timestamps, 1583530394))
 }
 
-export function getPointById(id, points) {
+export function getPointById(id) {
   var index;
   for (index in points) {
     if (points[index].id == id.toString()){
@@ -269,26 +271,26 @@ export function getPointById(id, points) {
   }
  }
 
-export function getInfectedNumber(points) {
+export function getInfectedNumber() {
    var index, sum=0;
    for (index in points) {
      sum += points[index].infected
    }
    return sum;
- }
+}
 
-export function getCuredNumber(points) {
+export function getCuredNumber() {
    var index, sum=0;
    for (index in points) {
      sum += points[index].cured
    }
    return sum;
- }
+}
 
-export function getDeathsNumber(points) {
+export function getDeathsNumber() {
    var index, sum=0;
    for (index in points) {
      sum += points[index].deaths
    }
    return sum;
- }
+}

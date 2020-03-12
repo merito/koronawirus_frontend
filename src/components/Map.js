@@ -2,7 +2,6 @@ import React from 'react'
 import {
   Map as MapComponent,
   Marker,
-  Popup,
   TileLayer,
   ZoomControl,
   ScaleControl,
@@ -10,15 +9,11 @@ import {
 import Control from 'react-leaflet-control'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import { useMediaQuery } from '@material-ui/core'
-import { GpsFixed, GpsNotFixed } from '@material-ui/icons'
 import { Icon, DivIcon } from 'leaflet'
 import MarkerClusterGroup from 'react-leaflet-markercluster'
 import 'leaflet/dist/leaflet.css'
 import 'react-leaflet-markercluster/dist/styles.min.css'
-import { getIconUrl } from '../utils/helpers'
-import {
- FacebookIcon,
-} from 'react-share';
+import { FacebookIcon } from 'react-share'
 
 
 const Map = React.forwardRef(({
@@ -35,7 +30,7 @@ const Map = React.forwardRef(({
 
   React.useEffect(() => {
     if (activeMarker) {
-      mapRef.current.leafletElement.panTo(activeMarker)
+      mapRef.current.leafletElement.panTo(activeMarker.coords)
     }
   }, [activeMarker])
 
@@ -53,8 +48,8 @@ const Map = React.forwardRef(({
 
   // Handle refs.
   React.useImperativeHandle(ref, () => ({
-    setActiveMarker(coords) {
-      setActiveMarker(coords)
+    setActiveMarker(marker) {
+      setActiveMarker(marker)
     },
     loadMapMarkers() {
       loadMapMarkers()
@@ -69,6 +64,10 @@ const Map = React.forwardRef(({
       setPreviousBounds(bounds)
     }
   }
+
+  const calculateIconSize = count => (1 + (0.2 * count)) * 25
+
+  const activeIconSize = activeMarker ? calculateIconSize(activeMarker.count) : null
 
   return (
     <MapComponent
@@ -100,7 +99,7 @@ const Map = React.forwardRef(({
       />
       <MarkerClusterGroup
         showCoverageOnHover={false}
-        maxClusterRadius={60}
+        maxClusterRadius={40}
         disableClusteringAtZoom={8}
         spiderfyOnMaxZoom={false}
         iconCreateFunction={cluster => {
@@ -114,20 +113,20 @@ const Map = React.forwardRef(({
       >
         {props.points && props.points.map(item => {
           const { location: { lat, lon }, type, infected } = item
-
+          const iconSize = calculateIconSize(infected)
           return <Marker
             key={item.id}
             count={infected}
             icon={new DivIcon({
-              html: infected,
-              className: type,
-              iconSize: [(1+(0.05*infected))*35, (1+(0.05*infected))*35],
-              iconAnchor: [20, 40]
+              html: `<div class='marker-count'>${infected}</div>`,
+              className: `${classes.marker} ${type.toLowerCase()}`,
+              iconSize: [iconSize, iconSize],
+              iconAnchor: [iconSize / 2, iconSize]
             })}
             position={[lat, lon]}
             onClick={() => {
               props.openLocationTab(item)
-              setActiveMarker([lat, lon])
+              setActiveMarker({ coords: [lat, lon] })
             }}
           />
         })}
@@ -136,15 +135,14 @@ const Map = React.forwardRef(({
         <Marker
           icon={new Icon({
             iconUrl: '/location-icons/point.svg',
-            iconSize: [50, 50],
-            iconAnchor: [23, 46],
+            iconSize: [activeIconSize, activeIconSize],
+            iconAnchor: [activeIconSize / 2, activeIconSize],
           })}
           zIndexOffset={1000}
-          position={activeMarker}
+          position={activeMarker.coords}
           draggable={props.editMode}
         />
       }
-      {activeMarker}
       {props.currentLocation &&
         <Marker
           icon={new Icon({
@@ -193,49 +191,34 @@ const useStyles = makeStyles(theme => ({
       fontWeight: 'bold',
       color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
-      fontSize: 'medium'
+      fontSize: 'medium',
     },
-    '& .ACTIVE': {
-      backgroundColor: 'transparent',
+  },
+  marker: {
+    backgroundColor: 'transparent',
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxSizing: 'border-box',
+    paddingBottom: '50%',
+    fontWeight: 'bold',
+    filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+    fontSize: 'medium',
+    color: '#ffffff',
+    '& .marker-count': {
+      marginBottom: '14%',
+    },
+    '&.active': {
       backgroundImage: 'url(/location-icons/active.svg)',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontWeight: 'bold',
-      color: '#ffffff',
-      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
-      fontSize: 'medium'
     },
-    '& .RESTRICTIONS': {
-      backgroundColor: 'transparent',
+    '&.restrictions': {
       backgroundImage: 'url(/location-icons/restrictions.svg)',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontWeight: 'bold',
-      color: '#ffffff',
-      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
-      fontSize: 'medium'
     },
-    '& .CURED': {
-      backgroundColor: 'transparent',
+    '&.cured': {
       backgroundImage: 'url(/location-icons/cured.svg)',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontWeight: 'bold',
-      color: '#ffffff',
-      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
-      fontSize: 'medium'
     },
   },
   popup: {

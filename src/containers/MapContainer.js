@@ -1,15 +1,11 @@
 import React from 'react'
-import { useSnackbar } from 'notistack'
-import api, { CancelToken, isCancel } from '../api'
 import Map from '../components/Map'
-import Text from '../components/Text'
-
-let cancelRequest
+import { getAllPoints } from '../data'
 
 
-const MapContainer = React.forwardRef((props, ref, points) => {
+const MapContainer = React.forwardRef((props, ref) => {
   const [initalPosition, setInitalPosition] = React.useState()
-  const { enqueueSnackbar } = useSnackbar()
+  const [points, setPoints] = React.useState([])
   const defaultPosition = [51.919231, 19.134422]
 
   const mapRef = React.useRef()
@@ -24,6 +20,7 @@ const MapContainer = React.forwardRef((props, ref, points) => {
     // Check whether stored position is available asychronously from recognized
     // location, because location recognition may take undefined amount of time.
     setInitalPosition({ center: defaultPosition })
+    setPoints(getAllPoints())
   }, [])
 
 

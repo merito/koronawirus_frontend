@@ -1,21 +1,16 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import Resizer from 'react-image-file-resizer'
-import dataUriToBuffer from 'data-uri-to-buffer'
 import { useSnackbar } from 'notistack'
-import api from '../api'
 import LocationInfo from '../components/LocationInfo'
 import Loader from '../components/Loader'
 import Text from '../components/Text'
-import { getPointById } from '../../data'
+import { getPointById } from '../data'
 
 
 const SelectedLocationContainer = ({
-  points,
   cachedLocation,
   setCachedLocation,
   match,
-  history,
 }) => {
   const { params: { id } } = match
   const { enqueueSnackbar } = useSnackbar()
@@ -31,7 +26,7 @@ const SelectedLocationContainer = ({
     } else {
       const handleAsync = async () => {
         try {
-          const data = await getPointById(id, points)
+          const data = await getPointById(id)
           setLocation(data)
           setCachedLocation(data)
         } catch (error) {

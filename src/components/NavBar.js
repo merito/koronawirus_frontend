@@ -1,53 +1,78 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography, Avatar } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
-import { ArrowDropDown, Menu } from '@material-ui/icons'
-import Form from 'react-standalone-form'
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  useMediaQuery,
+  Box,
+  Chip,
+} from '@material-ui/core'
+import { makeStyles, useTheme } from '@material-ui/core/styles'
+import { Menu } from '@material-ui/icons'
 import Dropdown from './Dropdown'
 import Logo from './Logo'
 import Text from './Text'
-import Loader from './Loader'
-import {
-  getInfectedNumber,
-  getDeathsNumber,
-  getLastUpdate
- } from '../../data'
 import { formatDateTime } from '../utils/helpers'
-import { useTheme } from '@material-ui/core/styles'
-import { useMediaQuery } from '@material-ui/core'
-
 
 
 const NavBar = ({
-  points,
   links,
   language,
   languages,
   setLanguage,
+  infectedNumber,
+  deathsNumber,
+  curedNumber,
+  lastUpdate,
 }) => {
   const classes = useStyles()
   const theme = useTheme()
-  const isPhone = useMediaQuery(theme.breakpoints.down('md'))
+  const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
+
+  const counters = [
+    {
+      label: <Text id='locationInfo.infected' />,
+      value: infectedNumber,
+      color: 'primary',
+    },
+    {
+      label: <Text id='locationInfo.deaths' />,
+      value: deathsNumber,
+      variant: 'outlined',
+      color: '',
+    },
+    {
+      label: <Text id='locationInfo.cured' />,
+      value: curedNumber,
+      color: 'secondary',
+    },
+  ]
 
   return (
     <AppBar position='relative' className={classes.root}>
-      <Toolbar>
+      <Toolbar className={classes.toolbar}>
         <Logo className={classes.logo} />
         <div className={classes.grow} />
-        <div>
-        {!isPhone && <Typography
-          variant='h6'
-        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)} <Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography>}
-        {isPhone && <div><Typography
-          variant='h6'
-        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}</Typography>
-        <Typography
-          variant='h6'
-        ><Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography></div>}
-        <Typography
-          variant='body2'
-        ><Text id='data' />: {formatDateTime(getLastUpdate(points))}</Typography>
-        </div>
+        <Typography variant='caption' className={classes.date}>
+          <span className={classes.noWrap}><Text id='data' />: </span>
+          {lastUpdate && formatDateTime(lastUpdate)}
+          {' '}
+        </Typography>
+        <Box textAlign={isPhone ? 'center' : 'right'} className={classes.stats}>
+          <div>
+            {counters.map((item, index) =>
+              <React.Fragment key={index}>
+                <Chip
+                  icon={item.icon}
+                  size={isPhone ? 'small' : 'medium'}
+                  label={<>{item.label}: {item.value}</>}
+                  color={item.color}
+                  variant={item.variant}
+                />{' '}
+              </React.Fragment>
+            )}
+          </div>
+        </Box>
         <Dropdown
           items={languages.map(lang => ({
             label: lang.toUpperCase(),
@@ -59,11 +84,9 @@ const NavBar = ({
           }}
         >{language ? language.toUpperCase() : ''}</Dropdown>
 
-          <Dropdown items={[
-            ...links,
-          ]}>
-              <Menu />
-          </Dropdown>
+        <Dropdown items={links}>
+          <Menu />
+        </Dropdown>
 
       </Toolbar>
     </AppBar>
@@ -75,8 +98,12 @@ const useStyles = makeStyles(theme => ({
   root: {
     zIndex: theme.zIndex.drawer + 1,
   },
+  toolbar: {
+    paddingRight: 0,
+    backgroundColor: theme.palette.grey[900],
+  },
   logo: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   name: {
     marginLeft: theme.spacing(1),
@@ -88,6 +115,16 @@ const useStyles = makeStyles(theme => ({
   },
   grow: {
     flexGrow: 1,
+  },
+  stats: {
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+  },
+  date: {
+    marginRight: theme.spacing(1),
+  },
+  noWrap: {
+    whiteSpace: 'no-wrap',
   },
 }))
 
