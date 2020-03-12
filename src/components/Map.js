@@ -95,7 +95,7 @@ const Map = React.forwardRef(({
       />
       <MarkerClusterGroup
         showCoverageOnHover={false}
-        maxClusterRadius={60}
+        maxClusterRadius={40}
         disableClusteringAtZoom={8}
         spiderfyOnMaxZoom={false}
         iconCreateFunction={cluster => {
@@ -109,15 +109,15 @@ const Map = React.forwardRef(({
       >
         {props.points && props.points.map(item => {
           const { location: { lat, lon }, type, infected } = item
-
+          const iconSize = (1 + (0.2 * infected)) * 25
           return <Marker
             key={item.id}
             count={infected}
             icon={new DivIcon({
-              html: infected,
-              className: type,
-              iconSize: [(1+(0.05*infected))*35, (1+(0.05*infected))*35],
-              iconAnchor: [20, 40]
+              html: `<div class='marker-count'>${infected}</div>`,
+              className: `${classes.marker} ${type.toLowerCase()}`,
+              iconSize: [iconSize, iconSize],
+              iconAnchor: [iconSize / 2, iconSize]
             })}
             position={[lat, lon]}
             onClick={() => {
@@ -188,49 +188,34 @@ const useStyles = makeStyles(theme => ({
       fontWeight: 'bold',
       color: '#ffffff',
       filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
-      fontSize: 'medium'
+      fontSize: 'medium',
     },
-    '& .ACTIVE': {
-      backgroundColor: 'transparent',
+  },
+  marker: {
+    backgroundColor: 'transparent',
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    boxSizing: 'border-box',
+    paddingBottom: '50%',
+    fontWeight: 'bold',
+    filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
+    fontSize: 'medium',
+    color: '#ffffff',
+    '& .marker-count': {
+      marginBottom: '14%',
+    },
+    '&.active': {
       backgroundImage: 'url(/location-icons/active.svg)',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontWeight: 'bold',
-      color: '#ffffff',
-      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
-      fontSize: 'medium'
     },
-    '& .RESTRICTIONS': {
-      backgroundColor: 'transparent',
+    '&.restrictions': {
       backgroundImage: 'url(/location-icons/restrictions.svg)',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontWeight: 'bold',
-      color: '#ffffff',
-      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
-      fontSize: 'medium'
     },
-    '& .CURED': {
-      backgroundColor: 'transparent',
+    '&.cured': {
       backgroundImage: 'url(/location-icons/cured.svg)',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontWeight: 'bold',
-      color: '#ffffff',
-      filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.5))',
-      fontSize: 'medium'
     },
   },
   popup: {
