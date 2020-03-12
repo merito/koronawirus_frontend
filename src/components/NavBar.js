@@ -27,7 +27,7 @@ const NavBar = ({
 }) => {
   const classes = useStyles()
   const theme = useTheme()
-  const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
+  const isPhone = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
     <AppBar position='relative' className={classes.root}>
