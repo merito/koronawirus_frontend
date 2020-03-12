@@ -18,8 +18,8 @@ const App = ({ history, location: { pathname } }) => {
 
   React.useEffect(() => {
     if (cachedLocation) {
-      const { lat, lon } = cachedLocation.location
-      mapRef.current.setActiveMarker([lat, lon])
+      const { location: { lat, lon }, infected } = cachedLocation
+      mapRef.current.setActiveMarker({ coords: [lat, lon], count: infected })
     } else {
       mapRef.current.setActiveMarker(null)
     }

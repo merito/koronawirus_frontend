@@ -17,9 +17,9 @@ const LocationInfo = ({
   selectedLocation,
 }) => {
   const classes = useStyles()
-  const [imagesLoading, setImagesLoading] = React.useState()
   const updatedAt = selectedLocation.last_modified_timestamp || selectedLocation.created_timestamp
   const type = locationTypes[selectedLocation.type]
+
   return (
     <div className={classes.root}>
       <div className={classes.main}>
@@ -55,15 +55,17 @@ const LocationInfo = ({
             gutterBottom
           ><strong><Text id='locationInfo.description' />:</strong> {selectedLocation.description}</Typography>}
 
-          {selectedLocation.source &&
-            <Typography
-              variant='body1'
-              gutterBottom
-            ><strong><Text id='locationInfo.source' />:</strong> {
-              selectedLocation.source.map((object, i) => <div><a href={object}>{object}</a></div> )}
-              </Typography>}
-
-
+        {selectedLocation.source &&
+          <Typography
+            variant='body1'
+            gutterBottom
+          >
+            <strong><Text id='locationInfo.source' />:</strong>{' '}
+            {selectedLocation.source.map((item, i) =>
+              <div key={i}><a href={item}>{item}</a></div>
+            )}
+          </Typography>
+        }
 
       </div>
 

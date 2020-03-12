@@ -8,7 +8,6 @@ import { getPointById } from '../data'
 
 
 const SelectedLocationContainer = ({
-  points,
   cachedLocation,
   setCachedLocation,
   match,

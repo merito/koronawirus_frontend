@@ -30,7 +30,7 @@ const Map = React.forwardRef(({
 
   React.useEffect(() => {
     if (activeMarker) {
-      mapRef.current.leafletElement.panTo(activeMarker)
+      mapRef.current.leafletElement.panTo(activeMarker.coords)
     }
   }, [activeMarker])
 
@@ -48,8 +48,8 @@ const Map = React.forwardRef(({
 
   // Handle refs.
   React.useImperativeHandle(ref, () => ({
-    setActiveMarker(coords) {
-      setActiveMarker(coords)
+    setActiveMarker(marker) {
+      setActiveMarker(marker)
     },
     loadMapMarkers() {
       loadMapMarkers()
@@ -64,6 +64,10 @@ const Map = React.forwardRef(({
       setPreviousBounds(bounds)
     }
   }
+
+  const calculateIconSize = count => (1 + (0.2 * count)) * 25
+
+  const activeIconSize = activeMarker ? calculateIconSize(activeMarker.count) : null
 
   return (
     <MapComponent
@@ -109,7 +113,7 @@ const Map = React.forwardRef(({
       >
         {props.points && props.points.map(item => {
           const { location: { lat, lon }, type, infected } = item
-          const iconSize = (1 + (0.2 * infected)) * 25
+          const iconSize = calculateIconSize(infected)
           return <Marker
             key={item.id}
             count={infected}
@@ -122,7 +126,7 @@ const Map = React.forwardRef(({
             position={[lat, lon]}
             onClick={() => {
               props.openLocationTab(item)
-              setActiveMarker([lat, lon])
+              setActiveMarker({ coords: [lat, lon] })
             }}
           />
         })}
@@ -131,15 +135,14 @@ const Map = React.forwardRef(({
         <Marker
           icon={new Icon({
             iconUrl: '/location-icons/point.svg',
-            iconSize: [50, 50],
-            iconAnchor: [23, 46],
+            iconSize: [activeIconSize, activeIconSize],
+            iconAnchor: [activeIconSize / 2, activeIconSize],
           })}
           zIndexOffset={1000}
-          position={activeMarker}
+          position={activeMarker.coords}
           draggable={props.editMode}
         />
       }
-      {activeMarker}
       {props.currentLocation &&
         <Marker
           icon={new Icon({
