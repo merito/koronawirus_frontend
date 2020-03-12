@@ -1,4 +1,4 @@
-const points = [
+var points = [
   {
     'id': '17',
     'name': 'Ostróda',
@@ -166,19 +166,6 @@ const points = [
               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
     'id': '29',
-    'name': 'Łódź',
-    'location': {'lat': '51.759234', 'lon': '19.455663'},
-    'deaths': 0,
-    'cured': 0,
-    'infected': 2,
-    'type': 'ACTIVE',
-    'created_timestamp': '1583934500',
-    'last_modified_timestamp': '1583995509',
-    'description': 'Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1237734191300857856',
-               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
-  },{
-    'id': '30',
     'name': 'Opole',
     'location': {'lat': '50.667905', 'lon': '17.922312'},
     'deaths': 0,
@@ -191,7 +178,7 @@ const points = [
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237790884726480898',
                'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a']
   },{
-    'id': '31',
+    'id': '30',
     'name': 'Sosnowiec',
     'location': {'lat': '50.286202', 'lon': '19.103692'},
     'deaths': 0,
@@ -203,7 +190,7 @@ const points = [
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '32',
+    'id': '31',
     'name': 'Chorzów',
     'location': {'lat': '50.297478', 'lon': '18.954529'},
     'deaths': 0,
@@ -215,7 +202,7 @@ const points = [
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '33',
+    'id': '32',
     'name': 'Zawiercie',
     'location': {'lat': '50.487735', 'lon': '19.416675'},
     'deaths': 0,
@@ -227,7 +214,7 @@ const points = [
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '34',
+    'id': '33',
     'name': 'Oleśnica',
     'location': {'lat': '51.213404', 'lon': '17.390018'},
     'deaths': 0,
@@ -239,7 +226,7 @@ const points = [
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
   },{
-    'id': '35',
+    'id': '34',
     'name': 'Rzeszów',
     'location': {'lat': '50.041123', 'lon': '21.999129'},
     'deaths': 0,
@@ -250,8 +237,21 @@ const points = [
     'last_modified_timestamp': '1584002398',
     'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1238019669023481856']
-  },
-]
+  },{
+    'id': '35',
+    'name': 'Łódź',
+    'location': {'lat': '51.759234', 'lon': '19.455663'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 2,
+    'type': 'ACTIVE',
+    'created_timestamp': '1583934500',
+    'last_modified_timestamp': '1583995509',
+    'description': 'Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237734191300857856',
+               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
+  }
+];
 
 export function getAllPoints() {
   return points
