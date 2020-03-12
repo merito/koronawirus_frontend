@@ -103,7 +103,7 @@ var points = [
     'location': {'lat': '52.406452', 'lon': '16.925044'},
     'deaths': 0,
     'cured': 0,
-    'infected': 2,
+    'infected': 4,
     'type': 'ACTIVE',
     'created_timestamp': '1583767696',
     'last_modified_timestamp': '1584002398',
