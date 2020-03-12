@@ -22,7 +22,8 @@ var points = [
     'created_timestamp': '1583530489',
     'last_modified_timestamp': '1584016724',
     'description': 'Dwójka pacjentów hospitalizowanych w Szczecinie wróciła samochodem z Włoch. Zgłosili się do powiatowego sanepidu.\n– Ta dwójka pacjentów postępowała zgodnie z instrukcjami – mówi prof. Szumowski. – Zgłosili się do sanepidu, poinformowali, że byli na terenach podwyższonego ryzyka i u nich prawdopodobieństwo zarażenia określono jako umiarkowanie wysokie. Nie mieli wtedy objawów i dlatego zostali objęci kwarantanną domową i zostali zdalnie, telemedycznie zwolnieni z pracy. Gdy poczuli się gorzej, zostali skierowani do szpitala i objęci opieką medyczną.',
-    'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce']
+    'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce',
+               'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a']
   },
   {
     'id': '19',
@@ -186,7 +187,8 @@ var points = [
     'created_timestamp': '1583947668',
     'last_modified_timestamp': '1584016724',
     'description': 'Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce.',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1237790884726480898']
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237790884726480898',
+               'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a']
   },{
     'id': '30',
     'name': 'Sosnowiec',
