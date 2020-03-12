@@ -27,7 +27,7 @@ const NavBar = ({
 }) => {
   const classes = useStyles()
   const theme = useTheme()
-  const isPhone = useMediaQuery(theme.breakpoints.down('xs'))
+  const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <AppBar position='relative' className={classes.root}>
@@ -37,7 +37,7 @@ const NavBar = ({
         <div>
         {!isPhone && <Typography
           variant='h6'
-        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}  <Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography>}
+        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)} <Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography>}
         {isPhone && <div><Typography
           variant='h6'
         ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}</Typography>
