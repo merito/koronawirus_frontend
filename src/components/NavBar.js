@@ -9,9 +9,13 @@ import Text from './Text'
 import Loader from './Loader'
 import {
   getInfectedNumber,
+  getDeathsNumber,
   getLastUpdate
  } from '../../data'
- import { formatDateTime } from '../utils/helpers'
+import { formatDateTime } from '../utils/helpers'
+import { useTheme } from '@material-ui/core/styles'
+import { useMediaQuery } from '@material-ui/core'
+
 
 
 const NavBar = ({
@@ -22,15 +26,24 @@ const NavBar = ({
   setLanguage,
 }) => {
   const classes = useStyles()
+  const theme = useTheme()
+  const isPhone = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
     <AppBar position='relative' className={classes.root}>
       <Toolbar>
         <Logo className={classes.logo} />
         <div className={classes.grow} />
-        <div><Typography
+        <div>
+        {!isPhone && <Typography
+          variant='h6'
+        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)} <Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography>}
+        {isPhone && <div><Typography
           variant='h6'
         ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}</Typography>
+        <Typography
+          variant='h6'
+        ><Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography></div>}
         <Typography
           variant='body2'
         ><Text id='data' />: {formatDateTime(getLastUpdate(points))}</Typography>
