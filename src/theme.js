@@ -22,7 +22,6 @@ const theme = createMuiTheme({
     MuiChip: {
       root: {
         backgroundColor: '#303030',
-        marginBottom: 3,
       },
       outlined: {
         borderColor: 'white',
@@ -31,6 +30,11 @@ const theme = createMuiTheme({
       label: {
         fontSize: '1.1rem',
         fontWeight: 'bold',
+      },
+      sizeSmall: {
+        height: 32,
+        marginTop: 4,
+        marginBottom: 4,
       },
       labelSmall: {
         fontSize: '0.9rem',
