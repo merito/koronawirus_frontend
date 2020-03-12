@@ -106,10 +106,11 @@ var points = [
     'infected': 2,
     'type': 'ACTIVE',
     'created_timestamp': '1583767696',
-    'last_modified_timestamp': '1583947668',
-    'description': 'Mamy nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z woj. wielkopolskiego, która przebywa w szpitalu w Poznaniu. W sumie mamy 17 potwierdzonych przypadków. Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce.',
+    'last_modified_timestamp': '1584002398',
+    'description': 'Mamy nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z woj. wielkopolskiego, która przebywa w szpitalu w Poznaniu. W sumie mamy 17 potwierdzonych przypadków. Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237037259674845184',
-              'https://twitter.com/MZ_GOV_PL/status/1237790884726480898']
+              'https://twitter.com/MZ_GOV_PL/status/1237790884726480898',
+              'https://twitter.com/MZ_GOV_PL/status/1238019669023481856']
   },{
     'id': '25',
     'name': 'Cieszyn',
@@ -233,6 +234,18 @@ var points = [
     'last_modified_timestamp': '1583995509',
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
+  },{
+    'id': '34',
+    'name': 'Rzeszów',
+    'location': {'lat': '50.041123', 'lon': '21.999129'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 1,
+    'type': 'ACTIVE',
+    'created_timestamp': '1584002398',
+    'last_modified_timestamp': '1584002398',
+    'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1238019669023481856']
   }
 ];
 
