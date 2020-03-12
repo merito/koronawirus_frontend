@@ -28,6 +28,7 @@ const NavBar = ({
   const classes = useStyles()
   const theme = useTheme()
   const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
+
   const counters = [
     {
       label: <Text id='locationInfo.infected' />,
@@ -51,8 +52,13 @@ const NavBar = ({
     <AppBar position='relative' className={classes.root}>
       <Toolbar className={classes.toolbar}>
         <Logo className={classes.logo} />
-        <div className={classes.grow} />
-        <Box textAlign='right'>
+        <div className={ classes.grow} />
+        <Typography variant='caption' className={classes.date}>
+          {!isPhone && <><Text id='data' />: </>}
+          {lastUpdate && formatDateTime(lastUpdate)}
+          {' '}
+        </Typography>
+        <Box textAlign={isPhone ? 'center' : 'right'} className={classes.stats}>
           <div>
             {counters.map((item, index) =>
               <React.Fragment key={index}>
@@ -66,10 +72,6 @@ const NavBar = ({
               </React.Fragment>
             )}
           </div>
-          <Typography variant='caption'>
-            {!isPhone && <><Text id='data' />: </>}
-            {lastUpdate && formatDateTime(lastUpdate)}
-          </Typography>
         </Box>
         <Dropdown
           items={languages.map(lang => ({
@@ -113,6 +115,13 @@ const useStyles = makeStyles(theme => ({
   },
   grow: {
     flexGrow: 1,
+  },
+  stats: {
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+  },
+  date: {
+    marginRight: theme.spacing(1),
   },
 }))
 

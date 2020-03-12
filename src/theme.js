@@ -22,11 +22,18 @@ const theme = createMuiTheme({
     MuiChip: {
       root: {
         backgroundColor: '#303030',
-        marginBottom: 2,
+        marginBottom: 3,
       },
       outlined: {
         borderColor: 'white',
         color: 'white',
+      },
+      label: {
+        fontSize: '1.1rem',
+        fontWeight: 'bold',
+      },
+      labelSmall: {
+        fontSize: '0.9rem',
       },
     },
   },
