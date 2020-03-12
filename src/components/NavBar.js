@@ -9,6 +9,7 @@ import Text from './Text'
 import Loader from './Loader'
 import {
   getInfectedNumber,
+  getDeathsNumber,
   getLastUpdate
  } from '../../data'
  import { formatDateTime } from '../utils/helpers'
@@ -30,7 +31,7 @@ const NavBar = ({
         <div className={classes.grow} />
         <div><Typography
           variant='h6'
-        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)}</Typography>
+        ><Text id='locationInfo.infected' />: {getInfectedNumber(points)} <Text id='locationInfo.deaths' />: {getDeathsNumber(points)}</Typography>
         <Typography
           variant='body2'
         ><Text id='data' />: {formatDateTime(getLastUpdate(points))}</Typography>
