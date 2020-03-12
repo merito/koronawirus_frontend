@@ -5,6 +5,7 @@ import {
   getInfectedNumber,
   getDeathsNumber,
   getLastUpdate,
+  getCuredNumber,
 } from '../data'
 
 const languages = ['pl', 'en']
@@ -13,6 +14,7 @@ const NavBarContainer = () => {
   const [language, setLanguage] = React.useContext(LanguageContext)
   const [infectedNumber, setInfectedNumber] = React.useState()
   const [deathsNumber, setDeathsNumber] = React.useState()
+  const [curedNumber, setCuredNumber] = React.useState()
   const [lastUpdate, setLastUpdate] = React.useState()
 
   const links = [
@@ -23,6 +25,7 @@ const NavBarContainer = () => {
     setInfectedNumber(getInfectedNumber())
     setDeathsNumber(getDeathsNumber())
     setLastUpdate(getLastUpdate())
+    setCuredNumber(getCuredNumber())
   }, [])
 
   return (
@@ -33,6 +36,7 @@ const NavBarContainer = () => {
       setLanguage={setLanguage}
       infectedNumber={infectedNumber}
       deathsNumber={deathsNumber}
+      curedNumber={curedNumber}
       lastUpdate={lastUpdate}
     />
   )

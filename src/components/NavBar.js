@@ -21,6 +21,7 @@ const NavBar = ({
   setLanguage,
   infectedNumber,
   deathsNumber,
+  curedNumber,
   lastUpdate,
 }) => {
   const classes = useStyles()
@@ -34,7 +35,9 @@ const NavBar = ({
         <div className={classes.grow} />
         <Box textAlign='right'>
           <Typography variant={isPhone ? 'subtitle2' : 'h6'}>
-            <Text id='locationInfo.infected' />: {infectedNumber} <Text id='locationInfo.deaths' />: {deathsNumber}
+            <Text id='locationInfo.infected' />: {infectedNumber}{' '}
+            <Text id='locationInfo.deaths' />: {deathsNumber}{' '}
+            <Text id='locationInfo.cured' />: {curedNumber}
           </Typography>
           <Typography
             variant='caption'
