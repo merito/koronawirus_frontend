@@ -7,7 +7,7 @@ export default function() {
 
       // Fires when the registered service worker has installed but is waiting to activate.
       wb.addEventListener('waiting', event => {
-        if (window.confirm('Dostępna jest nowsza wersja aplikacji. Czy chcesz przeładować widok?')) {
+        if (window.confirm('Dostępne są nowe dane na temat Koronawirusa. Przeładować widok?')) {
           // Set up a listener that will reload the page as soon as the previously waiting service worker has taken control.
           wb.addEventListener('controlling', event => {
             window.location.reload()
