@@ -31,17 +31,18 @@ var points = [
     'location': {'lat': '51.107791', 'lon': '17.038618'},
     'deaths': 0,
     'cured': 0,
-    'infected': 6,
+    'infected': 7,
     'type': 'ACTIVE',
     'created_timestamp': '1583530663',
-    'last_modified_timestamp': '1583995509',
-    'description': 'Czwarty z pacjentów też zgłosił się do lokalnych służb sanitarno-epidemiologicznych, ponieważ miał objawy, a przebywał w Wielkiej Brytanii, która jest zaliczana do krajów o wysokim ryzyku zakażenia. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Wrocławia to osoba starsza, po kontakcie z osobą bliską, która jest obecnie na hospitalizacji za granicą. 16 zarażona to kobieta (z wypowiedzi ministra zdrowia). Mamy nowy przypadek zakażenia koronawirusem, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z województwa dolnośląskiego, która przebywa w szpitalu we Wrocławiu. Ministerstwo Zdrowia @MZ_GOV_PL Pacjentka jest młoda, a jej stan jest dobry. W tej chwili mamy potwierdzonych 21 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
+    'last_modified_timestamp': '1584083272',
+    'description': 'Czwarty z pacjentów też zgłosił się do lokalnych służb sanitarno-epidemiologicznych, ponieważ miał objawy, a przebywał w Wielkiej Brytanii, która jest zaliczana do krajów o wysokim ryzyku zakażenia. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Wrocławia to osoba starsza, po kontakcie z osobą bliską, która jest obecnie na hospitalizacji za granicą. 16 zarażona to kobieta (z wypowiedzi ministra zdrowia). Mamy nowy przypadek zakażenia koronawirusem, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z województwa dolnośląskiego, która przebywa w szpitalu we Wrocławiu. Ministerstwo Zdrowia @MZ_GOV_PL Pacjentka jest młoda, a jej stan jest dobry. W tej chwili mamy potwierdzonych 21 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Potwierdzone wyniki dotyczą: dwóch osób z woj. podkarpackiego  (Leżajsk), jednej osoby z w woj. lubelskiego (Lublin), jednej osoby z woj. dolnośląskiego (Wrocław), i 3 osób z woj. łódzkiego (Łódź).',
     'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce',
               'https://twitter.com/MZ_GOV_PL/status/1236731347571478531',
               'https://twitter.com/MZ_GOV_PL/status/1236972289247326214',
               'https://www.pap.pl/aktualnosci/news%2C601218%2Cmz-16-potwierdzonych-przypadkow-koronawirusa-w-polsce.html',
               'https://twitter.com/MZ_GOV_PL/status/1237418484927250433',
-              'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
+              'https://twitter.com/MZ_GOV_PL/status/1237989004496318464',
+              'https://twitter.com/MZ_GOV_PL/status/1238360225977118720']
   },
   {
     'id': '20',
@@ -157,13 +158,14 @@ var points = [
     'location': {'lat': '51.246479', 'lon': '22.568481'},
     'deaths': 0,
     'cured': 0,
-    'infected': 5,
+    'infected': 6,
     'type': 'ACTIVE',
     'created_timestamp': '1583910784',
-    'last_modified_timestamp': '1583995509',
-    'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: młodego mężczyzny z woj. mazowieckiego (Warszawa), kobiety z woj. podkarpackiego (Łańcut) w sile wieku oraz kobiety z woj. lubelskiego (Lublin) także w sile wieku. W sumie to już 25 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
+    'last_modified_timestamp': '1584083272',
+    'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: młodego mężczyzny z woj. mazowieckiego (Warszawa), kobiety z woj. podkarpackiego (Łańcut) w sile wieku oraz kobiety z woj. lubelskiego (Lublin) także w sile wieku. W sumie to już 25 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Potwierdzone wyniki dotyczą: dwóch osób z woj. podkarpackiego  (Leżajsk), jednej osoby z w woj. lubelskiego (Lublin), jednej osoby z woj. dolnośląskiego (Wrocław), i 3 osób z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237636589112655872',
-              'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
+              'https://twitter.com/MZ_GOV_PL/status/1237989004496318464',
+              'https://twitter.com/MZ_GOV_PL/status/1238360225977118720']
   },{
     'id': '29',
     'name': 'Opole',
@@ -243,13 +245,26 @@ var points = [
     'location': {'lat': '51.759234', 'lon': '19.455663'},
     'deaths': 0,
     'cured': 0,
-    'infected': 2,
+    'infected': 5,
     'type': 'ACTIVE',
     'created_timestamp': '1583934500',
-    'last_modified_timestamp': '1583995509',
-    'description': 'Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
+    'last_modified_timestamp': '1584083272',
+    'description': 'Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: dziecka z woj. śląskiego (Cieszyn), które jest w dobrym stanie oraz młodej kobiety z woj. łódzkiego (Łódź). W sumie to już 27 przypadków zakażenia #koronawirus w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Potwierdzone wyniki dotyczą: dwóch osób z woj. podkarpackiego  (Leżajsk), jednej osoby z w woj. lubelskiego (Lublin), jednej osoby z woj. dolnośląskiego (Wrocław), i 3 osób z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237734191300857856',
-               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
+               'https://twitter.com/MZ_GOV_PL/status/1237989004496318464',
+               'https://twitter.com/MZ_GOV_PL/status/1238360225977118720']
+  },{
+    'id': '36',
+    'name': 'Leżajsk',
+    'location': {'lat': '50.261813', 'lon': '22.419218'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 2,
+    'type': 'ACTIVE',
+    'created_timestamp': '1584083272',
+    'last_modified_timestamp': '1584083272',
+    'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. podkarpackiego  (Leżajsk), jednej osoby z w woj. lubelskiego (Lublin), jednej osoby z woj. dolnośląskiego (Wrocław), i 3 osób z woj. łódzkiego (Łódź).',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1238360225977118720']
   }
 ];
 
