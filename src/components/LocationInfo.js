@@ -62,7 +62,7 @@ const LocationInfo = ({
           >
             <strong><Text id='locationInfo.source' />:</strong>{' '}
             {selectedLocation.source.map((item, i) =>
-              <div key={i}><a href={item}>{item}</a></div>
+              <div key={i}>[{i+1}] <a href={item} target="_blank">{item}</a></div>
             )}
           </Typography>
         }
