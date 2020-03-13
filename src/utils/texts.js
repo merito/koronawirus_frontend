@@ -11,7 +11,7 @@ export default {
     backToResults: 'Powrót do wyników',
     data: 'Dane na',
     locationInfo: {
-      infected: 'Zarażeni',
+      infected: 'Zakażeni',
       deaths: 'Zmarli',
       cured: 'Wyleczeni',
       lastUpdate: 'Ostatnia aktualizacja',
@@ -19,7 +19,7 @@ export default {
       source: 'Źródła'
     },
     locationType: {
-      active: 'Zarażeni',
+      active: 'Zakażeni',
       restrictions: 'Ograniczenia',
       cured: 'Wyleczeni'
     },
