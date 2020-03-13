@@ -65,7 +65,7 @@ const Map = React.forwardRef(({
     }
   }
 
-  const calculateIconSize = count => (1 + (0.2 * count)) * 25
+  const calculateIconSize = count => (1.1 + (0.1 * count)) * 25
 
   const activeIconSize = activeMarker ? calculateIconSize(activeMarker.count) : null
 
@@ -104,10 +104,11 @@ const Map = React.forwardRef(({
         spiderfyOnMaxZoom={false}
         iconCreateFunction={cluster => {
           const count = cluster.getAllChildMarkers().reduce((total, marker) => marker.options.count + total, 0)
+          const iconSize = calculateIconSize(count)
           return new DivIcon({
             html: count,
             className: 'woodboard-cluster',
-            iconSize: [40, 40],
+            iconSize: [iconSize, iconSize],
           })
         }}
       >
