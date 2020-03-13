@@ -17,13 +17,14 @@ var points = [
     'location': {'lat': '53.428624', 'lon': '14.552310'},
     'deaths': 0,
     'cured': 0,
-    'infected': 3,
+    'infected': 5,
     'type': 'ACTIVE',
     'created_timestamp': '1583530489',
-    'last_modified_timestamp': '1584016724',
-    'description': 'Dwójka pacjentów hospitalizowanych w Szczecinie wróciła samochodem z Włoch. Zgłosili się do powiatowego sanepidu.\n– Ta dwójka pacjentów postępowała zgodnie z instrukcjami – mówi prof. Szumowski. – Zgłosili się do sanepidu, poinformowali, że byli na terenach podwyższonego ryzyka i u nich prawdopodobieństwo zarażenia określono jako umiarkowanie wysokie. Nie mieli wtedy objawów i dlatego zostali objęci kwarantanną domową i zostali zdalnie, telemedycznie zwolnieni z pracy. Gdy poczuli się gorzej, zostali skierowani do szpitala i objęci opieką medyczną.',
+    'last_modified_timestamp': '1584092670',
+    'description': 'Dwójka pacjentów hospitalizowanych w Szczecinie wróciła samochodem z Włoch. Zgłosili się do powiatowego sanepidu.\n– Ta dwójka pacjentów postępowała zgodnie z instrukcjami – mówi prof. Szumowski. – Zgłosili się do sanepidu, poinformowali, że byli na terenach podwyższonego ryzyka i u nich prawdopodobieństwo zarażenia określono jako umiarkowanie wysokie. Nie mieli wtedy objawów i dlatego zostali objęci kwarantanną domową i zostali zdalnie, telemedycznie zwolnieni z pracy. Gdy poczuli się gorzej, zostali skierowani do szpitala i objęci opieką medyczną. Potwierdzone wyniki dotyczą: dwóch osób z woj. zachodniopomorskiego (Szczecin), jednej osoby z w woj. mazowieckiego (Warszawa).',
     'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce',
-               'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a']
+               'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a',
+               'https://twitter.com/MZ_GOV_PL/status/1238400210965073924']
   },
   {
     'id': '19',
@@ -76,17 +77,18 @@ var points = [
     'location': {'lat': '52.229832', 'lon': '21.011689'},
     'deaths': 0,
     'cured': 0,
-    'infected': 6,
+    'infected': 7,
     'type': 'ACTIVE',
     'created_timestamp': '1583671445',
-    'last_modified_timestamp': '1583995509',
-    'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Warszawy jest osobą młodą, która wróciła w ostatnim czasie z Włoch. - Mamy 18 przypadków zarażenia koronawirusem - powiedział minister zdrowia Łukasz Szumowski. 18. zarażony znajduje się w województwie mazowieckim, jego stan jest dobry. Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: młodego mężczyzny z woj. mazowieckiego (Warszawa), kobiety z woj. podkarpackiego (Łańcut) w sile wieku oraz kobiety z woj. lubelskiego (Lublin) także w sile wieku. W sumie to już 25 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
+    'last_modified_timestamp': '1584092670',
+    'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Warszawy jest osobą młodą, która wróciła w ostatnim czasie z Włoch. - Mamy 18 przypadków zarażenia koronawirusem - powiedział minister zdrowia Łukasz Szumowski. 18. zarażony znajduje się w województwie mazowieckim, jego stan jest dobry. Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: młodego mężczyzny z woj. mazowieckiego (Warszawa), kobiety z woj. podkarpackiego (Łańcut) w sile wieku oraz kobiety z woj. lubelskiego (Lublin) także w sile wieku. W sumie to już 25 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Potwierdzone wyniki dotyczą: dwóch osób z woj. zachodniopomorskiego (Szczecin), jednej osoby z w woj. mazowieckiego (Warszawa).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1236628432676675585?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1236628432676675585&ref_url=https%3A%2F%2Fwiadomosci.gazeta.pl%2Fwiadomosci%2F7%2C114883%2C25768896%2Cministerstwo-zdrowia-sa-dwa-nowe-przypadki-koronawirusa-w.html',
               'https://twitter.com/MZ_GOV_PL/status/1236731347571478531',
               'https://wiadomosci.onet.pl/kraj/koronawirus-kolejne-przypadki-w-polsce-czerwona-strefa-we-wloszech/pyd8x9b',
               'https://twitter.com/MZ_GOV_PL/status/1237366146589954049',
               'https://twitter.com/MZ_GOV_PL/status/1237636589112655872',
-              'https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
+              'https://twitter.com/MZ_GOV_PL/status/1237989004496318464',
+              'https://twitter.com/MZ_GOV_PL/status/1238400210965073924']
   },{
     'id': '23',
     'name': 'Kraków',
