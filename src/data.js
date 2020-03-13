@@ -107,16 +107,17 @@ var points = [
     'location': {'lat': '52.406452', 'lon': '16.925044'},
     'deaths': 1,
     'cured': 0,
-    'infected': 4,
+    'infected': 5,
     'type': 'ACTIVE',
     'created_timestamp': '1583767696',
-    'last_modified_timestamp': '1584025474',
-    'description': 'Mamy nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z woj. wielkopolskiego, która przebywa w szpitalu w Poznaniu. W sumie mamy 17 potwierdzonych przypadków. Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus. Zmarła pierwsza osoba zarażona koronawirusem w Polsce. Informację przekazał Jędrzej Solarski, zastępca prezydenta Poznania. Kobieta miała 57 lat. Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. wielkopolskiego (Poznań). W sumie mamy 51 przypadków zakażenia koronawirusem w Polsce, w tym jedna osoba zmarła.',
+    'last_modified_timestamp': '1584102428',
+    'description': 'Mamy nowy przypadek zakażenia #koronawirus, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z woj. wielkopolskiego, która przebywa w szpitalu w Poznaniu. W sumie mamy 17 potwierdzonych przypadków. Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus. Zmarła pierwsza osoba zarażona koronawirusem w Polsce. Informację przekazał Jędrzej Solarski, zastępca prezydenta Poznania. Kobieta miała 57 lat. Mamy 2 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. wielkopolskiego (Poznań). W sumie mamy 51 przypadków zakażenia koronawirusem w Polsce, w tym jedna osoba zmarła. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: osoby z woj. śląskiego (Zawiercie), z woj. podkarpackiego (Nisko) i woj. wielkopolskiego (Poznań).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237037259674845184',
               'https://twitter.com/MZ_GOV_PL/status/1237790884726480898',
               'https://twitter.com/MZ_GOV_PL/status/1238019669023481856',
               'https://wiadomosci.onet.pl/kraj/koronawirus-pierwsza-ofiara-w-polsce-kobieta-z-poznania-nie-zyje/r45502n',
-              'https://twitter.com/MZ_GOV_PL/status/1238117815934214145?s=19']
+              'https://twitter.com/MZ_GOV_PL/status/1238117815934214145?s=19',
+              'https://twitter.com/MZ_GOV_PL/status/1238440876231311363']
   },{
     'id': '25',
     'name': 'Cieszyn',
@@ -211,12 +212,13 @@ var points = [
     'location': {'lat': '50.487735', 'lon': '19.416675'},
     'deaths': 0,
     'cured': 0,
-    'infected': 1,
+    'infected': 2,
     'type': 'ACTIVE',
     'created_timestamp': '1583995509',
     'last_modified_timestamp': '1583995509',
-    'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź).',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464']
+    'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: osoby z woj. śląskiego (Zawiercie), z woj. podkarpackiego (Nisko) i woj. wielkopolskiego (Poznań).',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464',
+               'https://twitter.com/MZ_GOV_PL/status/1238440876231311363']
   },{
     'id': '33',
     'name': 'Oleśnica',
@@ -267,6 +269,18 @@ var points = [
     'last_modified_timestamp': '1584083272',
     'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. podkarpackiego  (Leżajsk), jednej osoby z w woj. lubelskiego (Lublin), jednej osoby z woj. dolnośląskiego (Wrocław), i 3 osób z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1238360225977118720']
+  },{
+    'id': '37',
+    'name': 'Nisko',
+    'location': {'lat': '50.519998', 'lon': '22.139569'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 1,
+    'type': 'ACTIVE',
+    'created_timestamp': '1584102428',
+    'last_modified_timestamp': '1584102428',
+    'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: osoby z woj. śląskiego (Zawiercie), z woj. podkarpackiego (Nisko) i woj. wielkopolskiego (Poznań).',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1238440876231311363']
   }
 ];
 
