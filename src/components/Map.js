@@ -65,7 +65,11 @@ const Map = React.forwardRef(({
     }
   }
 
-  const calculateIconSize = count => (1.1 + (0.1 * count)) * 25
+  const calculateIconSize = count => {
+    const calculated = (1.1 + (0.1 * count)) * 25
+    const maxSize = 55
+    return calculated < maxSize ? calculated : maxSize
+  }
 
   const activeIconSize = activeMarker ? calculateIconSize(activeMarker.count) : null
 
@@ -122,7 +126,7 @@ const Map = React.forwardRef(({
               html: `<div class='marker-count'>${infected}</div>`,
               className: `${classes.marker} ${type.toLowerCase()}`,
               iconSize: [iconSize, iconSize],
-              iconAnchor: [iconSize / 2, iconSize]
+              iconAnchor: [iconSize / 2, iconSize],
             })}
             position={[lat, lon]}
             onClick={() => {
@@ -161,7 +165,7 @@ const Map = React.forwardRef(({
         </>
       }
       <ScaleControl position='bottomright' imperial={false} />
-      <Control position='bottomright' className='leaflet-bar'>
+      <Control position='topright' className='leaflet-bar'>
         <a href={"https://www.facebook.com/sharer/sharer.php?u=".concat(document.URL)} target="_blank">
           <FacebookIcon size={'30'} />
         </a>
