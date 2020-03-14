@@ -59,7 +59,7 @@ const LocationInfo = ({
             </Typography>
             {selectedLocation.source.map((item, i) =>
               <Typography gutterBottom key={i}>
-                <Box textOverflow='ellipsis' overflow='hidden' whiteSpace='normal'>
+                <Box overflow='hidden' whiteSpace='normal'>
                   [{i + 1}] <a href={item} target='_blank'>{item}</a>
                 </Box>
               </Typography>
