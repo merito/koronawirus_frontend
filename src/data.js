@@ -179,13 +179,14 @@ var points = [
     'location': {'lat': '50.667905', 'lon': '17.922312'},
     'deaths': 0,
     'cured': 0,
-    'infected': 2,
+    'infected': 3,
     'type': 'ACTIVE',
     'created_timestamp': '1583947668',
-    'last_modified_timestamp': '1584016724',
-    'description': 'Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce.',
+    'last_modified_timestamp': '1584175257',
+    'description': 'Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: kobiety z woj. wielkopolskiego (Poznań), mężczyzny z opolskiego (Opole), a także dwóch kobiet z woj. warmińsko – mazurskiego (Ostróda). Stan wszystkich jest dobry. W sumie to już 31 przypadków zakażenia koronawirusem w Polsce. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą 2 osób z woj. pomorskiego (Gdańsk) i 1 z opolskiego (Opole). [3]',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237790884726480898',
-               'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a']
+               'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a',
+               'https://twitter.com/MZ_GOV_PL/status/1238744487956033537']
   },{
     'id': '30',
     'name': 'Sosnowiec',
@@ -301,7 +302,7 @@ var points = [
   },{
     'id': '39',
     'name': 'Bolesławiec',
-    'location': {'lat': '51.265791', 'lon': '15.565662139569'},
+    'location': {'lat': '51.265791', 'lon': '15.565662'},
     'deaths': 0,
     'cured': 0,
     'infected': 1,
@@ -310,6 +311,18 @@ var points = [
     'last_modified_timestamp': '1584171420',
     'description': 'Szanowni Państwo, mamy 13 nowych przypadków zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą 2 osób z woj. świętokrzyskiego (Starachowice), 3 z woj. dolnośląskiego (2 Wrocław i 1 Bolesławiec), 5 z woj. lubelskiego (Lublin) oraz 3 z woj. łódzkiego (Łódź).',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1238730377616863233']
+  },{
+    'id': '40',
+    'name': 'Gdańsk',
+    'location': {'lat': '54.351932', 'lon': '18.646360'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 2,
+    'type': 'ACTIVE',
+    'created_timestamp': '1584175257',
+    'last_modified_timestamp': '1584175257',
+    'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą 2 osób z woj. pomorskiego (Gdańsk) i 1 z opolskiego (Opole). [1]',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1238744487956033537']
   }
 ];
 
