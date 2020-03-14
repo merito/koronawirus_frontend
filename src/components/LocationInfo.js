@@ -41,10 +41,10 @@ const LocationInfo = ({
           gutterBottom
         ><strong><Text id='locationInfo.deaths' />:</strong> {selectedLocation.deaths}</Typography>
 
-        <Typography
+        {/* <Typography
           variant='body1'
           gutterBottom
-        ><strong><Text id='locationInfo.cured' />:</strong> {selectedLocation.cured}</Typography>
+        ><strong><Text id='locationInfo.cured' />:</strong> {selectedLocation.cured}</Typography> */}
 
         {selectedLocation.description &&
           <Typography

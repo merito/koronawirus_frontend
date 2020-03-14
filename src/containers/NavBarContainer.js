@@ -25,7 +25,7 @@ const NavBarContainer = () => {
     setInfectedNumber(getInfectedNumber())
     setDeathsNumber(getDeathsNumber())
     setLastUpdate(getLastUpdate())
-    setCuredNumber(getCuredNumber())
+    setCuredNumber(13)
   }, [])
 
   return (
