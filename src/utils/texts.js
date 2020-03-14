@@ -13,7 +13,7 @@ export default {
     locationInfo: {
       infected: 'Zakażeni',
       deaths: 'Zmarli',
-      cured: 'Wyleczeni',
+      cured: 'Ozdrowieńcy',
       lastUpdate: 'Ostatnia aktualizacja',
       description: 'Szczegóły',
       source: 'Źródła'
@@ -21,7 +21,7 @@ export default {
     locationType: {
       active: 'Zakażeni',
       restrictions: 'Ograniczenia',
-      cured: 'Wyleczeni'
+      cured: 'Ozdrowieńcy'
     },
     noResults: 'Nic nie znaleziono',
     connectionProblem: {
@@ -53,7 +53,7 @@ export default {
     locationInfo: {
       infected: 'Infected',
       deaths: 'Deaths',
-      cured: 'Cured',
+      cured: 'Convalescents',
       lastUpdate: 'Last update',
       description: 'Details',
       source: 'Sources'
@@ -61,7 +61,7 @@ export default {
     locationType: {
       active: 'Infected',
       restrictions: 'Restrictions',
-      cured: 'Cured'
+      cured: 'Convalescents'
     },
     noResults: 'No results',
     connectionProblem: {
