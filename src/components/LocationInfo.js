@@ -1,14 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import {
   Typography,
-  Button,
-  ButtonGroup,
+  Box,
+  Tooltip,
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import Dropzone from 'react-dropzone'
-import Loader from './Loader'
-import { roundLatLng, formatDate } from '../utils/helpers'
+import { formatDate } from '../utils/helpers'
 import locationTypes from '../utils/locationTypes'
 import Text from './Text'
 
@@ -56,15 +53,18 @@ const LocationInfo = ({
           ><strong><Text id='locationInfo.description' />:</strong> {selectedLocation.description}</Typography>}
 
         {selectedLocation.source &&
-          <Typography
-            variant='body1'
-            gutterBottom
-          >
-            <strong><Text id='locationInfo.source' />:</strong>{' '}
+          <>
+            <Typography variant='body1' gutterBottom>
+              <strong><Text id='locationInfo.source' />:</strong>
+            </Typography>
             {selectedLocation.source.map((item, i) =>
-              <div key={i}>[{i+1}] <a href={item} target="_blank">{item}</a></div>
+              <Typography gutterBottom key={i}>
+                <Box textOverflow='ellipsis' overflow='hidden' whiteSpace='normal'>
+                  [{i + 1}] <a href={item} target='_blank'>{item}</a>
+                </Box>
+              </Typography>
             )}
-          </Typography>
+          </>
         }
 
       </div>
