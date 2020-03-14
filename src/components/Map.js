@@ -161,7 +161,7 @@ const Map = React.forwardRef(({
         </>
       }
       <ScaleControl position='bottomright' imperial={false} />
-      <Control position='topleft' className='leaflet-bar'>
+      <Control position='topright' className='leaflet-bar'>
         <a href={"https://www.facebook.com/sharer/sharer.php?u=".concat(document.URL)} target="_blank">
           <FacebookIcon size={'30'} />
         </a>
