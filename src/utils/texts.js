@@ -75,7 +75,7 @@ export default {
     },
     answerPermission: 'Odpowiedz na pytanie o uprawnienia',
     infoPage: {
-      title: 'Informations',
+      title: 'Information',
       content: `Author is not responsible for data presented on site. You use the site on your own risk. Source of every data on this page is Polish Ministry of Healt - https://www.gov.pl/web/koronawirus
       
       Based on https://github.com/wiating-app/frontend (author Michał Kokociński)
