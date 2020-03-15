@@ -20,14 +20,15 @@ var points = [
     'location': {'lat': '53.428624', 'lon': '14.552310'},
     'deaths': 0,
     'cured': 0,
-    'infected': 5,
+    'infected': 6,
     'type': 'ACTIVE',
     'created_timestamp': '1583530489',
-    'last_modified_timestamp': '1584092670',
-    'description': 'Dwójka pacjentów hospitalizowanych w Szczecinie wróciła samochodem z Włoch. Zgłosili się do powiatowego sanepidu.\n– Ta dwójka pacjentów postępowała zgodnie z instrukcjami – mówi prof. Szumowski. – Zgłosili się do sanepidu, poinformowali, że byli na terenach podwyższonego ryzyka i u nich prawdopodobieństwo zarażenia określono jako umiarkowanie wysokie. Nie mieli wtedy objawów i dlatego zostali objęci kwarantanną domową i zostali zdalnie, telemedycznie zwolnieni z pracy. Gdy poczuli się gorzej, zostali skierowani do szpitala i objęci opieką medyczną. Potwierdzone wyniki dotyczą: dwóch osób z woj. zachodniopomorskiego (Szczecin), jednej osoby z w woj. mazowieckiego (Warszawa).',
+    'last_modified_timestamp': '1584303932',
+    'description': 'Dwójka pacjentów hospitalizowanych w Szczecinie wróciła samochodem z Włoch. Zgłosili się do powiatowego sanepidu.\n– Ta dwójka pacjentów postępowała zgodnie z instrukcjami – mówi prof. Szumowski. – Zgłosili się do sanepidu, poinformowali, że byli na terenach podwyższonego ryzyka i u nich prawdopodobieństwo zarażenia określono jako umiarkowanie wysokie. Nie mieli wtedy objawów i dlatego zostali objęci kwarantanną domową i zostali zdalnie, telemedycznie zwolnieni z pracy. Gdy poczuli się gorzej, zostali skierowani do szpitala i objęci opieką medyczną. Potwierdzone wyniki dotyczą: dwóch osób z woj. zachodniopomorskiego (Szczecin), jednej osoby z w woj. mazowieckiego (Warszawa). [3] Potwierdzone przypadki dotyczą 1 osoby z woj. dolnośląskiego (Wrocław) i 1 osoby z woj. zachodniopomorskiego (Szczecin). Wszyscy pacjenci są w stanie dobrym. [4]',
     'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce',
                'https://wiadomosci.wp.pl/koronawirus-w-polsce-lukasz-szumowski-o-57-letniej-pacjentce-miala-wspolistniejace-towarzyszace-choroby-6488120037214337a',
-               'https://twitter.com/MZ_GOV_PL/status/1238400210965073924']
+               'https://twitter.com/MZ_GOV_PL/status/1238400210965073924',
+               'https://twitter.com/MZ_GOV_PL/status/1239285647086694401']
   },
   {
     'id': '19',
@@ -35,11 +36,11 @@ var points = [
     'location': {'lat': '51.107791', 'lon': '17.038618'},
     'deaths': 1,
     'cured': 0,
-    'infected': 11,
+    'infected': 12,
     'type': 'ACTIVE',
     'created_timestamp': '1583530663',
-    'last_modified_timestamp': '1584261077',
-    'description': 'Czwarty z pacjentów też zgłosił się do lokalnych służb sanitarno-epidemiologicznych, ponieważ miał objawy, a przebywał w Wielkiej Brytanii, która jest zaliczana do krajów o wysokim ryzyku zakażenia. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Wrocławia to osoba starsza, po kontakcie z osobą bliską, która jest obecnie na hospitalizacji za granicą. 16 zarażona to kobieta (z wypowiedzi ministra zdrowia). Mamy nowy przypadek zakażenia koronawirusem, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z województwa dolnośląskiego, która przebywa w szpitalu we Wrocławiu. Ministerstwo Zdrowia @MZ_GOV_PL Pacjentka jest młoda, a jej stan jest dobry. W tej chwili mamy potwierdzonych 21 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Potwierdzone wyniki dotyczą: dwóch osób z woj. podkarpackiego  (Leżajsk), jednej osoby z w woj. lubelskiego (Lublin), jednej osoby z woj. dolnośląskiego (Wrocław), i 3 osób z woj. łódzkiego (Łódź). Zmarła druga osoba zakażona #koronawirus. To 73-letni mężczyzna, który w stanie ciężkim przebywał we wrocławskim szpitalu (woj. dolnośląskie) i miał choroby współistniejące. [8] Szanowni Państwo, mamy 13 nowych przypadków zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą 2 osób z woj. świętokrzyskiego (Starachowice), 3 z woj. dolnośląskiego (2 Wrocław i 1 Bolesławiec), 5 z woj. lubelskiego (Lublin) oraz 3 z woj. łódzkiego (Łódź). [9] Mamy 10 nowych przypadków zakażenia #koronawirus. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Warszawa), 1 z woj. podkarpackiego (Rzeszów), 2 z woj. dolnośląskiego (Wrocław), 2 z woj. łódzkiego (Łódź) i 2 z woj. lubelskiego (Lublin). [10] Potwierdzone przypadki dotyczą osoby z woj. podkarpackiego (Leżajsk), 2 osób z woj. mazowieckiego (Warszawa), 1 osoby z woj. świętokrzyskiego (Kielce), 1 osoby z woj. warmińsko-mazurskiego (Ostróda), 1 osoby z woj. dolnośląskiego (Wrocław),1 osoby z woj.lubelskiego. [11]',
+    'last_modified_timestamp': '1584303932',
+    'description': 'Czwarty z pacjentów też zgłosił się do lokalnych służb sanitarno-epidemiologicznych, ponieważ miał objawy, a przebywał w Wielkiej Brytanii, która jest zaliczana do krajów o wysokim ryzyku zakażenia. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Wrocławia to osoba starsza, po kontakcie z osobą bliską, która jest obecnie na hospitalizacji za granicą. 16 zarażona to kobieta (z wypowiedzi ministra zdrowia). Mamy nowy przypadek zakażenia koronawirusem, potwierdzony pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą kobiety z województwa dolnośląskiego, która przebywa w szpitalu we Wrocławiu. Ministerstwo Zdrowia @MZ_GOV_PL Pacjentka jest młoda, a jej stan jest dobry. W tej chwili mamy potwierdzonych 21 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Potwierdzone wyniki dotyczą: dwóch osób z woj. podkarpackiego  (Leżajsk), jednej osoby z w woj. lubelskiego (Lublin), jednej osoby z woj. dolnośląskiego (Wrocław), i 3 osób z woj. łódzkiego (Łódź). Zmarła druga osoba zakażona #koronawirus. To 73-letni mężczyzna, który w stanie ciężkim przebywał we wrocławskim szpitalu (woj. dolnośląskie) i miał choroby współistniejące. [8] Szanowni Państwo, mamy 13 nowych przypadków zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą 2 osób z woj. świętokrzyskiego (Starachowice), 3 z woj. dolnośląskiego (2 Wrocław i 1 Bolesławiec), 5 z woj. lubelskiego (Lublin) oraz 3 z woj. łódzkiego (Łódź). [9] Mamy 10 nowych przypadków zakażenia #koronawirus. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Warszawa), 1 z woj. podkarpackiego (Rzeszów), 2 z woj. dolnośląskiego (Wrocław), 2 z woj. łódzkiego (Łódź) i 2 z woj. lubelskiego (Lublin). [10] Potwierdzone przypadki dotyczą osoby z woj. podkarpackiego (Leżajsk), 2 osób z woj. mazowieckiego (Warszawa), 1 osoby z woj. świętokrzyskiego (Kielce), 1 osoby z woj. warmińsko-mazurskiego (Ostróda), 1 osoby z woj. dolnośląskiego (Wrocław),1 osoby z woj.lubelskiego. [11] Potwierdzone przypadki dotyczą 1 osoby z woj. dolnośląskiego (Wrocław) i 1 osoby z woj. zachodniopomorskiego (Szczecin). Wszyscy pacjenci są w stanie dobrym. [12]',
     'source': ['https://www.gov.pl/web/koronawirus/cztery-nowe-potwierdzone-przypadki-koronawirusa-w-polsce',
               'https://twitter.com/MZ_GOV_PL/status/1236731347571478531',
               'https://twitter.com/MZ_GOV_PL/status/1236972289247326214',
@@ -50,7 +51,8 @@ var points = [
               'https://twitter.com/MZ_GOV_PL/status/1238561084237328387',
               'https://twitter.com/MZ_GOV_PL/status/1238730377616863233',
               'https://twitter.com/MZ_GOV_PL/status/1238893339774267392',
-              'https://twitter.com/MZ_GOV_PL/status/1239102167660802048']
+              'https://twitter.com/MZ_GOV_PL/status/1239102167660802048',
+              'https://twitter.com/MZ_GOV_PL/status/1239285647086694401']
   },
   {
     'id': '20',
