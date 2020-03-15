@@ -5,6 +5,7 @@ import './App.css'
 import Layout from './components/Layout'
 import LocationTab from './components/LocationTab'
 import Info from './components/Info'
+import Contributing from './components/Contributing'
 import NavBarContainer from './containers/NavBarContainer'
 import MapContainer from './containers/MapContainer'
 import SelectedLocationContainer from './containers/SelectedLocationContainer'
@@ -66,6 +67,7 @@ const App = ({ history, location: { pathname } }) => {
 
       <Switch>
         <Route exact path='/info' component={Info} />
+        <Route exact path='/contributing' component={Contributing} />
       </Switch>
 
     </Layout>
