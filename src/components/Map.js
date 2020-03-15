@@ -99,7 +99,7 @@ const Map = React.forwardRef(({
     >
       <TileLayer
         url='https://mapserver.mapy.cz/turist-m/{z}-{x}-{y}'
-        attribution={`&copy; <a href="https://www.seznam.cz" target="_blank" rel="noopener">Seznam.cz, a.s.</a>, &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>, &copy; NASA`}
+        attribution={`<a href="https://www.netlify.com" target="_blank">This site is powered by Netlify</a> &copy; <a href="https://www.seznam.cz" target="_blank" rel="noopener">Seznam.cz, a.s.</a>, &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>, &copy; NASA`}
       />
       <MarkerClusterGroup
         showCoverageOnHover={false}

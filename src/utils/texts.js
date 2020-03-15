@@ -32,15 +32,9 @@ export default {
     answerPermission: 'Czy chcesz włączyć pokazywanie bierzącej lokalizacji?',
     infoPage: {
       title: 'Informacje',
-      content: `Autor nie ponosi odpowiedzialności za dane przedstawione na stronie. Używasz strony na własne ryzyko.
-      Na mapie znajdują się informacje których źródłem jest Ministerstwo Zdrowia - https://www.gov.pl/web/koronawirus
-
-      Kod aplikacji bazuje na https://github.com/wiating-app/frontend (autor Michał Kokociński)
-      
-      Ta aplikacja jest projektem open-source, źródła oraz możliwość dołączenia do projektu znajdziesz na Githubie - https://github.com/merito/koronawirus_frontend
-      
-      Kontakt z autorem - Dawid Wolski merito123@gmail.com`
-    }
+      content: `Autor nie ponosi odpowiedzialności za dane przedstawione na stronie. Używasz strony na własne ryzyko. Na mapie znajdują się informacje których źródłem jest Ministerstwo Zdrowia - https://www.gov.pl/web/koronawirus Kod aplikacji bazuje na https://github.com/wiating-app/frontend (autor Michał Kokociński). Ta aplikacja jest projektem open-source, źródła oraz możliwość dołączenia do projektu znajdziesz na Githubie - https://github.com/merito/koronawirus_frontend Kontakt z autorem - Dawid Wolski merito123@gmail.com`
+    },
+    contributing: 'Pomóż w rozwoju'
   },
 
   en: {
@@ -76,13 +70,8 @@ export default {
     answerPermission: 'Odpowiedz na pytanie o uprawnienia',
     infoPage: {
       title: 'Information',
-      content: `Author is not responsible for data presented on site. You use the site on your own risk. Source of every data on this page is Polish Ministry of Healt - https://www.gov.pl/web/koronawirus
-      
-      Based on https://github.com/wiating-app/frontend (author Michał Kokociński)
-      
-      This is an open-source project. You can find sources and participate on Github - https://github.com/merito/koronawirus_frontend
-      
-      Contact to the author - Dawid Wolski merito123@gmail.com`
-    }
+      content: `Author is not responsible for data presented on site. You use the site on your own risk. Source of every data on this page is Polish Ministry of Healt - https://www.gov.pl/web/koronawirus Based on https://github.com/wiating-app/frontend (author Michał Kokociński). This is an open-source project. You can find sources and participate on Github - https://github.com/merito/koronawirus_frontend Contact to the author - Dawid Wolski merito123@gmail.com`
+    },
+    contributing: 'Contributing'
   },
 }

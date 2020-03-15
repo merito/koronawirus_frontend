@@ -7,6 +7,7 @@ import {
   getLastUpdate,
   getCuredNumber,
 } from '../data'
+import Text from '../components/Text'
 
 const languages = ['pl', 'en']
 
@@ -18,7 +19,8 @@ const NavBarContainer = () => {
   const [lastUpdate, setLastUpdate] = React.useState()
 
   const links = [
-    { label: 'Informacje', url: '/info' },
+    { label: <Text id='infoPage.title' />, url: '/info' },
+    { label: <Text id='contributing' />, url: '/contributing'}
   ]
 
   React.useEffect(() => {
