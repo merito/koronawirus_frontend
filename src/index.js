@@ -11,23 +11,13 @@ import enableServiceWorker from './enableServiceWorker'
 import TranslationsProvider from './utils/TranslationsProvider'
 import theme from './theme'
 import formTheme from './utils/formTheme'
-import Maintenance from './components/Maintenance'
+import Redirect from './components/Redirect'
 
 
 ReactDOM.render(
   <TranslationsProvider>
     <ThemeProvider theme={theme}>
-      {process.env.MAINTENANCE === 'true'
-        ? <Maintenance />
-        : <Router history={history}>
-          <SnackbarProvider maxSnack={3} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
-              <FormThemeProvider theme={formTheme}>
-                <CssBaseline />
-                  <App />
-              </FormThemeProvider>
-          </SnackbarProvider>
-        </Router>
-      }
+      { <Redirect /> }
     </ThemeProvider>
   </TranslationsProvider>, document.getElementById('root'))
 
