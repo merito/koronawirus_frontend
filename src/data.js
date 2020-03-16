@@ -175,7 +175,7 @@ var points = [
     'deaths': 1,
     'cured': 0,
     'infected': 0,
-    'type': 'ACTIVE',
+    'type': 'CURED',
     'created_timestamp': '1583910784',
     'last_modified_timestamp': '1583910784',
     'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: młodego mężczyzny z woj. mazowieckiego (Warszawa), kobiety z woj. podkarpackiego (Łańcut) w sile wieku oraz kobiety z woj. lubelskiego (Lublin) także w sile wieku. W sumie to już 25 przypadków zakażenia koronawirusem w Polsce. [1] Mamy 21 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 10 osób z woj. łódzkiego, 5 osób z woj. mazowieckiego, 3 osób z woj. dolnośląskiego, 1 osoby z woj. lubelskiego, 1osoby z woj. wielkopolskiego, 1 osoby z woj. podkarpackiego. Pacjenci są w stanie stabilnym. Jednocześnie z przykrością informujemy, że w szpitalu w Łańcucie (woj. podkarpackie) zmarła czwarta osoba zakażona koronawirusem. [2]',
