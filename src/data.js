@@ -88,11 +88,11 @@ var points = [
     'location': {'lat': '52.229832', 'lon': '21.011689'},
     'deaths': 0,
     'cured': 0,
-    'infected': 27,
+    'infected': 29,
     'type': 'ACTIVE',
     'created_timestamp': '1583671445',
-    'last_modified_timestamp': '1584344708',
-    'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Warszawy jest osobą młodą, która wróciła w ostatnim czasie z Włoch. - Mamy 18 przypadków zarażenia koronawirusem - powiedział minister zdrowia Łukasz Szumowski. 18. zarażony znajduje się w województwie mazowieckim, jego stan jest dobry. Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: młodego mężczyzny z woj. mazowieckiego (Warszawa), kobiety z woj. podkarpackiego (Łańcut) w sile wieku oraz kobiety z woj. lubelskiego (Lublin) także w sile wieku. W sumie to już 25 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Potwierdzone wyniki dotyczą: dwóch osób z woj. zachodniopomorskiego (Szczecin), jednej osoby z w woj. mazowieckiego (Warszawa). Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą czterech osób z woj. mazowieckiego (Warszawa). [8] Potwierdzone przypadki dotyczą 2 osób z woj. mazowieckiego (Warszawa), 1 z woj. wielkopolskiego (Poznań), 1 z woj. lubelskiego (Lublin) i 5 z województwa łódzkiego (Łódź). [9] Mamy 10 nowych przypadków zakażenia #koronawirus. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Warszawa), 1 z woj. podkarpackiego (Rzeszów), 2 z woj. dolnośląskiego (Wrocław), 2 z woj. łódzkiego (Łódź) i 2 z woj. lubelskiego (Lublin). [10] Potwierdzone przypadki dotyczą osoby z woj. podkarpackiego (Leżajsk), 2 osób z woj. mazowieckiego (Warszawa), 1 osoby z woj. świętokrzyskiego (Kielce), 1 osoby z woj. warmińsko-mazurskiego (Ostróda), 1 osoby z woj. dolnośląskiego (Wrocław),1 osoby z woj.lubelskiego. [11] Potwierdzone przypadki dotyczą 4 osób z woj. mazowieckiego (Warszawa), 3 osób z woj. łódzkiego (Łódź) i 1 z woj. lubuskiego (Zielona Góra). Wszyscy pacjenci w stanie dobrym. [12] Mamy 25 nowych przypadków zakażenia #koronawirus potwierdzonych pozytywnym wynikiem testów laboratoryjnych. [13]',
+    'last_modified_timestamp': '1584371368',
+    'description': '2 nowe przypadki zakażenia #koronawirus potwierdzono dziś u mężczyzny z woj. śląskiego i kobiety z woj. mazowieckiego. Pacjenci są hospitalizowani w szpitalach w Raciborzu i Warszawie. Oboje są w dobrym stanie. Służby sanitarno-epidemiologiczne docierają do wszystkich, którzy mogli mieć kontakt z zakażonymi. Część osób już trafiła na kwarantannę. Mamy 3 nowe przypadki zarażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą kobiety z województwa śląskiego i mężczyzn z dolnośląskiego oraz mazowieckiego, którzy przebywają w szpitalach w Raciborzu, Wrocławiu i Warszawie. Pacjent z Warszawy jest osobą młodą, która wróciła w ostatnim czasie z Włoch. - Mamy 18 przypadków zarażenia koronawirusem - powiedział minister zdrowia Łukasz Szumowski. 18. zarażony znajduje się w województwie mazowieckim, jego stan jest dobry. Minister @SzumowskiLukasz w #MZ: Mamy potwierdzone 3 nowe przypadki zakażenia #koronawirus. Jedna osoba w Warszawie i dwie w Cieszynie. Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: młodego mężczyzny z woj. mazowieckiego (Warszawa), kobiety z woj. podkarpackiego (Łańcut) w sile wieku oraz kobiety z woj. lubelskiego (Lublin) także w sile wieku. W sumie to już 25 przypadków zakażenia koronawirusem w Polsce. Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Potwierdzone wyniki dotyczą: dwóch osób z woj. zachodniopomorskiego (Szczecin), jednej osoby z w woj. mazowieckiego (Warszawa). Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Wyniki dotyczą czterech osób z woj. mazowieckiego (Warszawa). [8] Potwierdzone przypadki dotyczą 2 osób z woj. mazowieckiego (Warszawa), 1 z woj. wielkopolskiego (Poznań), 1 z woj. lubelskiego (Lublin) i 5 z województwa łódzkiego (Łódź). [9] Mamy 10 nowych przypadków zakażenia #koronawirus. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Warszawa), 1 z woj. podkarpackiego (Rzeszów), 2 z woj. dolnośląskiego (Wrocław), 2 z woj. łódzkiego (Łódź) i 2 z woj. lubelskiego (Lublin). [10] Potwierdzone przypadki dotyczą osoby z woj. podkarpackiego (Leżajsk), 2 osób z woj. mazowieckiego (Warszawa), 1 osoby z woj. świętokrzyskiego (Kielce), 1 osoby z woj. warmińsko-mazurskiego (Ostróda), 1 osoby z woj. dolnośląskiego (Wrocław),1 osoby z woj.lubelskiego. [11] Potwierdzone przypadki dotyczą 4 osób z woj. mazowieckiego (Warszawa), 3 osób z woj. łódzkiego (Łódź) i 1 z woj. lubuskiego (Zielona Góra). Wszyscy pacjenci w stanie dobrym. [12] Mamy 25 nowych przypadków zakażenia #koronawirus potwierdzonych pozytywnym wynikiem testów laboratoryjnych. [13] Szanowni Państwo, mamy 6 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Radom, Warszawa), 1 osoby z woj. małopolskiego (Kraków) i 2 osób z woj. śląskiego (Zawiercie). [14]',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1236628432676675585?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1236628432676675585&ref_url=https%3A%2F%2Fwiadomosci.gazeta.pl%2Fwiadomosci%2F7%2C114883%2C25768896%2Cministerstwo-zdrowia-sa-dwa-nowe-przypadki-koronawirusa-w.html',
               'https://twitter.com/MZ_GOV_PL/status/1236731347571478531',
               'https://wiadomosci.onet.pl/kraj/koronawirus-kolejne-przypadki-w-polsce-czerwona-strefa-we-wloszech/pyd8x9b',
@@ -105,19 +105,21 @@ var points = [
               'https://twitter.com/MZ_GOV_PL/status/1238893339774267392',
               'https://twitter.com/MZ_GOV_PL/status/1239102167660802048',
               'https://twitter.com/MZ_GOV_PL/status/1239189937465016320',
-              'https://twitter.com/MZ_GOV_PL/status/1239457258871885824']
+              'https://twitter.com/MZ_GOV_PL/status/1239457258871885824',
+              'https://twitter.com/MZ_GOV_PL/status/1239569105226792960']
   },{
     'id': '23',
     'name': 'Kraków',
     'location': {'lat': '50.064629', 'lon': '19.944961'},
     'deaths': 0,
     'cured': 0,
-    'infected': 1,
+    'infected': 2,
     'type': 'ACTIVE',
     'created_timestamp': '1583746863',
-    'last_modified_timestamp': '1583746863',
-    'description': 'To pierwszy przypadek zarażenia stwierdzony w Krakowie i 12 potwierdzony jak dotąd w Polsce. Mężczyzna trafił do szpitala w sobotę wieczorem. W ostatnim czasie przebywał w północnych Włoszech. Jego stan jest dobry, stabilny.',
-    'source': ['https://www.pap.pl/aktualnosci/news%2C601134%2Cszpital-pierwszy-przypadek-zarazenia-koronawirusem-w-krakowie.html']
+    'last_modified_timestamp': '1584371368',
+    'description': 'To pierwszy przypadek zarażenia stwierdzony w Krakowie i 12 potwierdzony jak dotąd w Polsce. Mężczyzna trafił do szpitala w sobotę wieczorem. W ostatnim czasie przebywał w północnych Włoszech. Jego stan jest dobry, stabilny. [1] Szanowni Państwo, mamy 6 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Radom, Warszawa), 1 osoby z woj. małopolskiego (Kraków) i 2 osób z woj. śląskiego (Zawiercie). [2]',
+    'source': ['https://www.pap.pl/aktualnosci/news%2C601134%2Cszpital-pierwszy-przypadek-zarazenia-koronawirusem-w-krakowie.html',
+               'https://twitter.com/MZ_GOV_PL/status/1239569105226792960']
   },{
     'id': '24',
     'name': 'Poznań',
@@ -239,14 +241,15 @@ var points = [
     'location': {'lat': '50.487735', 'lon': '19.416675'},
     'deaths': 0,
     'cured': 0,
-    'infected': 3,
+    'infected': 5,
     'type': 'ACTIVE',
     'created_timestamp': '1583995509',
-    'last_modified_timestamp': '1584295650',
-    'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: osoby z woj. śląskiego (Zawiercie), z woj. podkarpackiego (Nisko) i woj. wielkopolskiego (Poznań). [2] Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 2 osób z woj. śląskiego (Bytom, Zawiercie), 1 osoby z woj. łódzkiego (Łódź) i 1 osoby z woj. lubelskiego (Biłgoraj). [3]',
+    'last_modified_timestamp': '1584371368',
+    'description': 'Potwierdzone wyniki dotyczą: dwóch osób z woj. mazowieckiego  (Warszawa), czterech osób z w woj. lubelskiego (Lublin), 3 osób z woj. dolnośląskiego (Wrocław, Oleśnica),3 osób z woj. śląskiego (Sosnowiec, Chorzów, Zawiercie) i jednej osoby z woj. łódzkiego (Łódź). Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: osoby z woj. śląskiego (Zawiercie), z woj. podkarpackiego (Nisko) i woj. wielkopolskiego (Poznań). [2] Mamy 4 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 2 osób z woj. śląskiego (Bytom, Zawiercie), 1 osoby z woj. łódzkiego (Łódź) i 1 osoby z woj. lubelskiego (Biłgoraj). [3] Szanowni Państwo, mamy 6 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Radom, Warszawa), 1 osoby z woj. małopolskiego (Kraków) i 2 osób z woj. śląskiego (Zawiercie). [4]',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1237989004496318464',
                'https://twitter.com/MZ_GOV_PL/status/1238440876231311363',
-               'https://twitter.com/MZ_GOV_PL/status/1239250911232475136']
+               'https://twitter.com/MZ_GOV_PL/status/1239250911232475136',
+               'https://twitter.com/MZ_GOV_PL/status/1239569105226792960']
   },{
     'id': '33',
     'name': 'Oleśnica',
@@ -426,6 +429,18 @@ var points = [
     'last_modified_timestamp': '1584344708',
     'description': 'Mamy 25 nowych przypadków zakażenia #koronawirus potwierdzonych pozytywnym wynikiem testów laboratoryjnych. [1]',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1239457258871885824']
+  },{
+    'id': '47',
+    'name': 'Radom',
+    'location': {'lat': '51.402613', 'lon': '21.147007'},
+    'deaths': 0,
+    'cured': 0,
+    'infected': 1,
+    'type': 'ACTIVE',
+    'created_timestamp': '1584371368',
+    'last_modified_timestamp': '1584371368',
+    'description': 'Szanowni Państwo, mamy 6 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Radom, Warszawa), 1 osoby z woj. małopolskiego (Kraków) i 2 osób z woj. śląskiego (Zawiercie). [1]',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1239569105226792960']
   }
 ];
 
