@@ -13,7 +13,8 @@ import { Icon, DivIcon } from 'leaflet'
 import MarkerClusterGroup from 'react-leaflet-markercluster'
 import 'leaflet/dist/leaflet.css'
 import 'react-leaflet-markercluster/dist/styles.min.css'
-import { FacebookIcon } from 'react-share'
+import NetlifyBadge from './NetlifyBadge'
+import FacebookShare from './FacebookShare'
 
 
 const Map = React.forwardRef(({
@@ -159,17 +160,18 @@ const Map = React.forwardRef(({
           position={props.currentLocation}
         />
       }
+      <Control position='topright'>
+        <FacebookShare />
+      </Control>
       {(!props.isLocationTabOpen || !isPhone) &&
         <>
           <ZoomControl position='topright' />
         </>
       }
-      <ScaleControl position='bottomright' imperial={false} />
-      <Control position='topright' className='leaflet-bar'>
-        <a href={"https://www.facebook.com/sharer/sharer.php?u=".concat(document.URL)} target="_blank">
-          <FacebookIcon size={'30'} />
-        </a>
+      <Control position='bottomright'>
+        <NetlifyBadge />
       </Control>
+      <ScaleControl position='bottomright' imperial={false} />
     </MapComponent>
   )
 })
