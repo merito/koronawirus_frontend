@@ -1,7 +1,7 @@
 import api from './api'
 
 
-var { points } = api.get('data.json')
+var { data: { points } } = api.get('data.json')
 
 export function getAllPoints() {
   return points
