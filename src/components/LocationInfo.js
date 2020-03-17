@@ -68,17 +68,6 @@ const LocationInfo = ({
         }
 
       </div>
-
-      <div className={classes.footer}>
-        {updatedAt &&
-          <Typography
-            component='div'
-            variant='caption'
-            align='right'
-            color='textSecondary'
-          ><Text id='locationInfo.lastUpdate' />: {formatDate(updatedAt)}</Typography>
-        }
-      </div>
     </div>
   )
 }

@@ -23,7 +23,6 @@ const NavBar = ({
   infectedNumber,
   deathsNumber,
   curedNumber,
-  lastUpdate,
 }) => {
   const classes = useStyles()
   const theme = useTheme()
@@ -53,11 +52,6 @@ const NavBar = ({
       <Toolbar className={classes.toolbar}>
         <Logo className={classes.logo} />
         <div className={classes.grow} />
-        <Typography variant='caption' className={classes.date}>
-          <span className={classes.noWrap}><Text id='data' />: </span>
-          {lastUpdate && formatDateTime(lastUpdate)}
-          {' '}
-        </Typography>
         <Box textAlign={isPhone ? 'center' : 'right'} className={classes.stats}>
           <div>
             {counters.map((item, index) =>

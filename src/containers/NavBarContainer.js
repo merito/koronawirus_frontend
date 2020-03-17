@@ -4,7 +4,6 @@ import { LanguageContext } from '../utils/TranslationsProvider'
 import {
   getInfectedNumber,
   getDeathsNumber,
-  getLastUpdate,
   getCuredNumber,
 } from '../data'
 import Text from '../components/Text'
@@ -16,7 +15,6 @@ const NavBarContainer = () => {
   const [infectedNumber, setInfectedNumber] = React.useState()
   const [deathsNumber, setDeathsNumber] = React.useState()
   const [curedNumber, setCuredNumber] = React.useState()
-  const [lastUpdate, setLastUpdate] = React.useState()
 
   const links = [
     { label: <Text id='infoPage.title' />, url: '/info' },
@@ -26,7 +24,6 @@ const NavBarContainer = () => {
   React.useEffect(() => {
     setInfectedNumber(getInfectedNumber())
     setDeathsNumber(getDeathsNumber())
-    setLastUpdate(getLastUpdate())
     setCuredNumber(13)
   }, [])
 
@@ -39,7 +36,6 @@ const NavBarContainer = () => {
       infectedNumber={infectedNumber}
       deathsNumber={deathsNumber}
       curedNumber={curedNumber}
-      lastUpdate={lastUpdate}
     />
   )
 }
