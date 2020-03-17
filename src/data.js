@@ -516,7 +516,6 @@ var points = [
     'description': 'Potwierdzone przypadki dotyczą: 8 osób z woj. łódzkiego, 5 z woj. dolnośląskiego i po 1 osobie z woj. opolskiego, śląskiego, zachodniopomorskiego i podlaskiego. [1]',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1240006228392185857']
   }
-  53.132275, 23.168740
 ];
 
 export function getAllPoints() {
