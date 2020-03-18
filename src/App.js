@@ -9,6 +9,8 @@ import Contributing from './components/Contributing'
 import NavBarContainer from './containers/NavBarContainer'
 import MapContainer from './containers/MapContainer'
 import SelectedLocationContainer from './containers/SelectedLocationContainer'
+import api from './api'
+
 
 
 const App = ({ history, location: { pathname } }) => {
@@ -16,6 +18,9 @@ const App = ({ history, location: { pathname } }) => {
   const isLocationTabOpen = location.pathname.startsWith('/location') || location.pathname.startsWith('/search')
   const editMode = pathname.endsWith('/edit') || pathname.endsWith('/new')
   const mapRef = React.useRef()
+
+  const { data: { points } } = api.get('data.json')
+  setPoints(points)
 
   React.useEffect(() => {
     if (cachedLocation) {
@@ -27,7 +32,8 @@ const App = ({ history, location: { pathname } }) => {
   }, [cachedLocation])
 
   return (
-    <Layout appBar={<NavBarContainer />}>
+    <Layout appBar={<NavBarContainer
+      points={points} />}>
 
       <LocationTab
         closeLocationTab={() => {
@@ -52,6 +58,7 @@ const App = ({ history, location: { pathname } }) => {
       </LocationTab>
 
       <MapContainer
+        points={points}
         openLocationTab={point => {
           setCachedLocation(point)
           history.push(`/location/${point.id}`)
