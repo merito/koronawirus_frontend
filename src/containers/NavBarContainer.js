@@ -10,7 +10,9 @@ import Text from '../components/Text'
 
 const languages = ['pl', 'en']
 
-const NavBarContainer = () => {
+const NavBarContainer = ({
+  points,
+}) => {
   const [language, setLanguage] = React.useContext(LanguageContext)
   const [infectedNumber, setInfectedNumber] = React.useState()
   const [deathsNumber, setDeathsNumber] = React.useState()
