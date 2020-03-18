@@ -22,7 +22,7 @@ const LocationInfo = ({
       <div className={classes.main}>
         <Typography
           variant='h5'
-        >{selectedLocation.name}</Typography>
+        >Województwo {selectedLocation.name}</Typography>
         <Typography
           variant='body2'
           color='textSecondary'
@@ -67,17 +67,6 @@ const LocationInfo = ({
           </>
         }
 
-      </div>
-
-      <div className={classes.footer}>
-        {updatedAt &&
-          <Typography
-            component='div'
-            variant='caption'
-            align='right'
-            color='textSecondary'
-          ><Text id='locationInfo.lastUpdate' />: {formatDate(updatedAt)}</Typography>
-        }
       </div>
     </div>
   )

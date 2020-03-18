@@ -1,33 +1,30 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import { LanguageContext } from '../utils/TranslationsProvider'
-import {
-  getInfectedNumber,
-  getDeathsNumber,
-  getLastUpdate,
-  getCuredNumber,
-} from '../data'
+import usePoints from '../utils/usePoints'
 import Text from '../components/Text'
 
 const languages = ['pl', 'en']
 
 const NavBarContainer = () => {
   const [language, setLanguage] = React.useContext(LanguageContext)
-  const [infectedNumber, setInfectedNumber] = React.useState()
-  const [deathsNumber, setDeathsNumber] = React.useState()
-  const [curedNumber, setCuredNumber] = React.useState()
-  const [lastUpdate, setLastUpdate] = React.useState()
+  const {
+    loading,
+    error,
+    infectedNumber,
+    curedNumber,
+    deathsNumber,
+  } = usePoints()
 
   const links = [
     { label: <Text id='infoPage.title' />, url: '/info' },
-    { label: <Text id='contributing' />, url: '/contributing'}
+    // { label: <Text id='contributing' />, url: '/contributing'}
   ]
 
   React.useEffect(() => {
-    setInfectedNumber(getInfectedNumber())
-    setDeathsNumber(getDeathsNumber())
-    setLastUpdate(getLastUpdate())
-    setCuredNumber(13)
+    // setInfectedNumber(getInfectedNumber())
+    // setDeathsNumber(getDeathsNumber())
+    // setCuredNumber(13)
   }, [])
 
   return (
@@ -38,8 +35,7 @@ const NavBarContainer = () => {
       setLanguage={setLanguage}
       infectedNumber={infectedNumber}
       deathsNumber={deathsNumber}
-      curedNumber={curedNumber}
-      lastUpdate={lastUpdate}
+      curedNumber={13}
     />
   )
 }

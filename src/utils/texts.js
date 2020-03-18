@@ -11,7 +11,7 @@ export default {
     backToResults: 'Powrót do wyników',
     data: 'Dane na',
     locationInfo: {
-      infected: 'Zakażeni',
+      infected: 'Potwierdzone',
       deaths: 'Zmarli',
       cured: 'Ozdrowieńcy',
       lastUpdate: 'Ostatnia aktualizacja',
@@ -19,7 +19,7 @@ export default {
       source: 'Źródła'
     },
     locationType: {
-      active: 'Zakażeni',
+      active: 'Potwierdzone',
       restrictions: 'Ograniczenia',
       cured: 'Ozdrowieńcy'
     },
@@ -32,7 +32,7 @@ export default {
     answerPermission: 'Czy chcesz włączyć pokazywanie bierzącej lokalizacji?',
     infoPage: {
       title: 'Informacje',
-      content: `Autor nie ponosi odpowiedzialności za dane przedstawione na stronie. Używasz strony na własne ryzyko. Na mapie znajdują się informacje których źródłem jest Ministerstwo Zdrowia - https://www.gov.pl/web/koronawirus W przypadku gdy dane odnoszą się do obszaru przypadki liczone są na poczet stolicy tego obszaru (powiat, województwo). Kod aplikacji bazuje na https://github.com/wiating-app/frontend (autor Michał Kokociński). Ta aplikacja jest projektem open-source, źródła oraz możliwość dołączenia do projektu znajdziesz na Githubie - https://github.com/merito/koronawirus_frontend Kontakt z autorem - Dawid Wolski merito123@gmail.com`
+      content: `Autor nie ponosi odpowiedzialności za dane przedstawione na stronie. Używasz strony na własne ryzyko. Na mapie znajdują się informacje których źródłem jest Ministerstwo Zdrowia - https://www.gov.pl/web/koronawirus Ponieważ ministerstwo podaje dane tylko z podziałem na województwa to również taka granulacja została wprowadzona na mapę. Kod aplikacji bazuje na https://github.com/wiating-app/frontend (autor Michał Kokociński). Ta aplikacja jest projektem open-source, źródła oraz możliwość dołączenia do projektu znajdziesz na Githubie - https://github.com/merito/koronawirus_frontend Kontakt z autorem - Dawid Wolski merito123@gmail.com`
     },
     contributing: 'Pomóż w rozwoju'
   },
@@ -49,7 +49,7 @@ export default {
     backToResults: 'Back to results',
     data: 'Updated',
     locationInfo: {
-      infected: 'Infected',
+      infected: 'Confirmed',
       deaths: 'Deaths',
       cured: 'Convalescents',
       lastUpdate: 'Last update',
@@ -57,7 +57,7 @@ export default {
       source: 'Sources'
     },
     locationType: {
-      active: 'Infected',
+      active: 'Confirmed',
       restrictions: 'Restrictions',
       cured: 'Convalescents'
     },
@@ -70,7 +70,7 @@ export default {
     answerPermission: 'Odpowiedz na pytanie o uprawnienia',
     infoPage: {
       title: 'Information',
-      content: `Author is not responsible for data presented on site. You use the site on your own risk. Source of every data on this page is Polish Ministry of Healt - https://www.gov.pl/web/koronawirus In case of inaccurate data cases are placed in the main city in the reported region. Based on https://github.com/wiating-app/frontend (author Michał Kokociński). This is an open-source project. You can find sources and participate on Github - https://github.com/merito/koronawirus_frontend Contact to the author - Dawid Wolski merito123@gmail.com`
+      content: `Author is not responsible for data presented on site. You use the site on your own risk. Source of every data on this page is Polish Ministry of Healt - https://www.gov.pl/web/koronawirus Based on https://github.com/wiating-app/frontend (author Michał Kokociński). This is an open-source project. You can find sources and participate on Github - https://github.com/merito/koronawirus_frontend Contact to the author - Dawid Wolski merito123@gmail.com`
     },
     contributing: 'Contributing'
   },
