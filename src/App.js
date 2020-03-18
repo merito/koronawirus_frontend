@@ -18,9 +18,14 @@ const App = ({ history, location: { pathname } }) => {
   const isLocationTabOpen = location.pathname.startsWith('/location') || location.pathname.startsWith('/search')
   const editMode = pathname.endsWith('/edit') || pathname.endsWith('/new')
   const mapRef = React.useRef()
+  const [points, setPoints] = React.useState()
 
-  const { data: { points } } = api.get('data.json')
-  setPoints(points)
+  React.useEffect(() => {
+      const { data: { points } } = api.get('data.json')
+      setPoints(points)
+    }
+  )
+  
 
   React.useEffect(() => {
     if (cachedLocation) {
