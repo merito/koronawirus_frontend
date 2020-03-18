@@ -285,15 +285,16 @@ var points = [
     'location': {'lat': '50.041123', 'lon': '21.999129'},
     'deaths': 0,
     'cured': 0,
-    'infected': 6,
+    'infected': 7,
     'type': 'ACTIVE',
     'created_timestamp': '1584002398',
-    'last_modified_timestamp': '1584389018',
-    'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus. [1] Mamy 10 nowych przypadków zakażenia #koronawirus. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Warszawa), 1 z woj. podkarpackiego (Rzeszów), 2 z woj. dolnośląskiego (Wrocław), 2 z woj. łódzkiego (Łódź) i 2 z woj. lubelskiego (Lublin). [2] Mamy 25 nowych przypadków zakażenia #koronawirus potwierdzonych pozytywnym wynikiem testów laboratoryjnych. [3] Mamy 21 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 10 osób z woj. łódzkiego, 5 osób z woj. mazowieckiego, 3 osób z woj. dolnośląskiego, 1 osoby z woj. lubelskiego, 1osoby z woj. wielkopolskiego, 1 osoby z woj. podkarpackiego. Pacjenci są w stanie stabilnym. Jednocześnie z przykrością informujemy, że w szpitalu w Łańcucie (woj. podkarpackie) zmarła czwarta osoba zakażona koronawirusem. [4]',
+    'last_modified_timestamp': '1584516892',
+    'description': 'Mamy 3 nowe przypadki zakażenia #koronawirus, potwierdzone pozytywnymi wynikami testów laboratoryjnych. Potwierdzone wyniki dotyczą: 2 osób z woj. podkarpackiego (Rzeszów) oraz jednej osoby z woj. wielkopolskiego (Poznań). W sumie mamy 47 przypadków zakażenia #koronawirus. [1] Mamy 10 nowych przypadków zakażenia #koronawirus. Potwierdzone przypadki dotyczą 3 osób z woj. mazowieckiego (Warszawa), 1 z woj. podkarpackiego (Rzeszów), 2 z woj. dolnośląskiego (Wrocław), 2 z woj. łódzkiego (Łódź) i 2 z woj. lubelskiego (Lublin). [2] Mamy 25 nowych przypadków zakażenia #koronawirus potwierdzonych pozytywnym wynikiem testów laboratoryjnych. [3] Mamy 21 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą 10 osób z woj. łódzkiego, 5 osób z woj. mazowieckiego, 3 osób z woj. dolnośląskiego, 1 osoby z woj. lubelskiego, 1osoby z woj. wielkopolskiego, 1 osoby z woj. podkarpackiego. Pacjenci są w stanie stabilnym. Jednocześnie z przykrością informujemy, że w szpitalu w Łańcucie (woj. podkarpackie) zmarła czwarta osoba zakażona koronawirusem. [4] Potwierdzone przypadki dotyczą: 4 osób z woj. warmińsko-mazurskiego, 2 z woj. śląskiego i po 1 osobie z woj. podkarpackiego i świętokrzyskiego. [5]',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1238019669023481856',
                'https://twitter.com/MZ_GOV_PL/status/1238893339774267392',
                'https://twitter.com/MZ_GOV_PL/status/1239457258871885824',
-               'https://twitter.com/MZ_GOV_PL/status/1239642766814085120']
+               'https://twitter.com/MZ_GOV_PL/status/1239642766814085120',
+               'https://twitter.com/MZ_GOV_PL/status/1240179074569588737']
   },{
     'id': '35',
     'name': 'Łódź',
@@ -385,12 +386,13 @@ var points = [
     'location': {'lat': '50.866076', 'lon': '20.628574'},
     'deaths': 0,
     'cured': 0,
-    'infected': 1,
+    'infected': 2,
     'type': 'ACTIVE',
     'created_timestamp': '1584261077',
-    'last_modified_timestamp': '1584261077',
-    'description': 'Potwierdzone przypadki dotyczą osoby z woj. podkarpackiego (Leżajsk), 2 osób z woj. mazowieckiego (Warszawa), 1 osoby z woj. świętokrzyskiego (Kielce), 1 osoby z woj. warmińsko-mazurskiego (Ostróda), 1 osoby z woj. dolnośląskiego (Wrocław),1 osoby z woj.lubelskiego. [1]',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1239102167660802048']
+    'last_modified_timestamp': '1584516892',
+    'description': 'Potwierdzone przypadki dotyczą osoby z woj. podkarpackiego (Leżajsk), 2 osób z woj. mazowieckiego (Warszawa), 1 osoby z woj. świętokrzyskiego (Kielce), 1 osoby z woj. warmińsko-mazurskiego (Ostróda), 1 osoby z woj. dolnośląskiego (Wrocław),1 osoby z woj.lubelskiego. [1] Potwierdzone przypadki dotyczą: 4 osób z woj. warmińsko-mazurskiego, 2 z woj. śląskiego i po 1 osobie z woj. podkarpackiego i świętokrzyskiego. [2]',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1239102167660802048',
+               'https://twitter.com/MZ_GOV_PL/status/1240179074569588737']
   },{
     'id': '42',
     'name': 'Bytom',
@@ -483,26 +485,28 @@ var points = [
     'location': {'lat': '50.264359', 'lon': '19.023521'},
     'deaths': 0,
     'cured': 0,
-    'infected': 6,
+    'infected': 8,
     'type': 'ACTIVE',
     'created_timestamp': '1584389018',
-    'last_modified_timestamp': '1584475558',
-    'description': 'Mamy 28 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą: 7 osób z woj. kujawsko-pomorskiego, 6 osób z woj. pomorskiego, 3 osób z woj. mazowieckiego, 3 osób z woj. lubelskiego, 3 osób z woj. śląskiego, 2 osób z woj. małopolskiego, 2 osób z woj. warmińsko-mazurskiego, 1 osoby z woj. opolskiego, 1 osoby z woj. zachodniopomorskiego.Pacjenci są w stanie stabilnym. [1] Potwierdzone przypadki dotyczą 6 osób z dolnośląskiego, 3 osób z woj. łódzkiego, 2 osób z woj. śląskiego i po 1 osobie z woj. małopolskiego, lubelskiego i kujawsko-pomorskiego. [2] Potwierdzone przypadki dotyczą: 8 osób z woj. łódzkiego, 5 z woj. dolnośląskiego i po 1 osobie z woj. opolskiego, śląskiego, zachodniopomorskiego i podlaskiego. [3]',
+    'last_modified_timestamp': '1584516892',
+    'description': 'Mamy 28 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą: 7 osób z woj. kujawsko-pomorskiego, 6 osób z woj. pomorskiego, 3 osób z woj. mazowieckiego, 3 osób z woj. lubelskiego, 3 osób z woj. śląskiego, 2 osób z woj. małopolskiego, 2 osób z woj. warmińsko-mazurskiego, 1 osoby z woj. opolskiego, 1 osoby z woj. zachodniopomorskiego.Pacjenci są w stanie stabilnym. [1] Potwierdzone przypadki dotyczą 6 osób z dolnośląskiego, 3 osób z woj. łódzkiego, 2 osób z woj. śląskiego i po 1 osobie z woj. małopolskiego, lubelskiego i kujawsko-pomorskiego. [2] Potwierdzone przypadki dotyczą: 8 osób z woj. łódzkiego, 5 z woj. dolnośląskiego i po 1 osobie z woj. opolskiego, śląskiego, zachodniopomorskiego i podlaskiego. [3] Potwierdzone przypadki dotyczą: 4 osób z woj. warmińsko-mazurskiego, 2 z woj. śląskiego i po 1 osobie z woj. podkarpackiego i świętokrzyskiego. [4]',
     'source': ['https://twitter.com/MZ_GOV_PL/status/1239820771888975872',
                'https://twitter.com/MZ_GOV_PL/status/1239895596447805443',
-               'https://twitter.com/MZ_GOV_PL/status/1240006228392185857']
+               'https://twitter.com/MZ_GOV_PL/status/1240006228392185857',
+               'https://twitter.com/MZ_GOV_PL/status/1240179074569588737']
   },{
     'id': '50',
     'name': 'Olsztyn',
     'location': {'lat': '53.778345', 'lon': '20.480179'},
     'deaths': 0,
     'cured': 0,
-    'infected': 2,
+    'infected': 6,
     'type': 'ACTIVE',
     'created_timestamp': '1584389018',
-    'last_modified_timestamp': '1584389018',
-    'description': 'Mamy 28 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą: 7 osób z woj. kujawsko-pomorskiego, 6 osób z woj. pomorskiego, 3 osób z woj. mazowieckiego, 3 osób z woj. lubelskiego, 3 osób z woj. śląskiego, 2 osób z woj. małopolskiego, 2 osób z woj. warmińsko-mazurskiego, 1 osoby z woj. opolskiego, 1 osoby z woj. zachodniopomorskiego.Pacjenci są w stanie stabilnym. [1]',
-    'source': ['https://twitter.com/MZ_GOV_PL/status/1239820771888975872']
+    'last_modified_timestamp': '1584516892',
+    'description': 'Mamy 28 nowych przypadków zakażenia #koronawirus, potwierdzonych pozytywnym wynikiem testów laboratoryjnych. Potwierdzone przypadki dotyczą: 7 osób z woj. kujawsko-pomorskiego, 6 osób z woj. pomorskiego, 3 osób z woj. mazowieckiego, 3 osób z woj. lubelskiego, 3 osób z woj. śląskiego, 2 osób z woj. małopolskiego, 2 osób z woj. warmińsko-mazurskiego, 1 osoby z woj. opolskiego, 1 osoby z woj. zachodniopomorskiego.Pacjenci są w stanie stabilnym. [1] Potwierdzone przypadki dotyczą: 4 osób z woj. warmińsko-mazurskiego, 2 z woj. śląskiego i po 1 osobie z woj. podkarpackiego i świętokrzyskiego. [2]',
+    'source': ['https://twitter.com/MZ_GOV_PL/status/1239820771888975872',
+               'https://twitter.com/MZ_GOV_PL/status/1240179074569588737']
   },{
     'id': '51',
     'name': 'Białystok',
