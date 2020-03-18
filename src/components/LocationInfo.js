@@ -22,7 +22,7 @@ const LocationInfo = ({
       <div className={classes.main}>
         <Typography
           variant='h5'
-        >{selectedLocation.name}</Typography>
+        >Województwo {selectedLocation.name}</Typography>
         <Typography
           variant='body2'
           color='textSecondary'

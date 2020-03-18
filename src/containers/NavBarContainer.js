@@ -18,7 +18,7 @@ const NavBarContainer = () => {
 
   const links = [
     { label: <Text id='infoPage.title' />, url: '/info' },
-    { label: <Text id='contributing' />, url: '/contributing'}
+    // { label: <Text id='contributing' />, url: '/contributing'}
   ]
 
   React.useEffect(() => {
@@ -35,7 +35,7 @@ const NavBarContainer = () => {
       setLanguage={setLanguage}
       infectedNumber={infectedNumber}
       deathsNumber={deathsNumber}
-      curedNumber={curedNumber}
+      curedNumber={13}
     />
   )
 }
