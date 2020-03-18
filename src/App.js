@@ -14,7 +14,7 @@ import SelectedLocationContainer from './containers/SelectedLocationContainer'
 const App = ({ history, location: { pathname } }) => {
   const [cachedLocation, setCachedLocation] = React.useState()
   const isLocationTabOpen = location.pathname.startsWith('/location') || location.pathname.startsWith('/search')
-  const editMode = pathname.endsWith('/edit') || pathname.endsWith('/new')
+  // const editMode = pathname.endsWith('/edit') || pathname.endsWith('/new')
   const mapRef = React.useRef()
 
   React.useEffect(() => {
@@ -62,7 +62,7 @@ const App = ({ history, location: { pathname } }) => {
         }}
         ref={mapRef}
         isLocationTabOpen={isLocationTabOpen}
-        editMode={editMode}
+        // editMode={editMode}
       />
 
       <Switch>

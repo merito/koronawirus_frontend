@@ -4,7 +4,7 @@ import { useSnackbar } from 'notistack'
 import LocationInfo from '../components/LocationInfo'
 import Loader from '../components/Loader'
 import Text from '../components/Text'
-import { getPointById } from '../data'
+// import { getPointById } from '../data'
 
 
 const SelectedLocationContainer = ({
@@ -26,9 +26,9 @@ const SelectedLocationContainer = ({
     } else {
       const handleAsync = async () => {
         try {
-          const data = await getPointById(id)
-          setLocation(data)
-          setCachedLocation(data)
+          // const data = await getPointById(id)
+          // setLocation(data)
+          // setCachedLocation(data)
         } catch (error) {
           setError(true)
           enqueueSnackbar(<Text id='connectionProblem.location' />, { variant: 'error' })

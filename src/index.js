@@ -9,6 +9,7 @@ import App from './App'
 import history from './history'
 import enableServiceWorker from './enableServiceWorker'
 import TranslationsProvider from './utils/TranslationsProvider'
+import { PointsProvider } from './utils/usePoints'
 import theme from './theme'
 import formTheme from './utils/formTheme'
 import Maintenance from './components/Maintenance'
@@ -21,10 +22,12 @@ ReactDOM.render(
         ? <Maintenance />
         : <Router history={history}>
           <SnackbarProvider maxSnack={3} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
+            <PointsProvider>
               <FormThemeProvider theme={formTheme}>
                 <CssBaseline />
-                  <App />
+                <App />
               </FormThemeProvider>
+            </PointsProvider>
           </SnackbarProvider>
         </Router>
       }

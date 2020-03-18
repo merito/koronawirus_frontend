@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 const api = axios.create({
-  baseURL: `/api/`,
+  baseURL: `https://koronamap.cal24.pl/`,
   timeout: 10000,
   headers: {
     'Accept-Version': 1,

@@ -1,6 +1,6 @@
 import React from 'react'
 import Map from '../components/Map'
-import { getAllPoints } from '../data'
+// import { getAllPoints } from '../data'
 
 
 const MapContainer = React.forwardRef((props, ref) => {
@@ -20,7 +20,7 @@ const MapContainer = React.forwardRef((props, ref) => {
     // Check whether stored position is available asychronously from recognized
     // location, because location recognition may take undefined amount of time.
     setInitalPosition({ center: defaultPosition })
-    setPoints(getAllPoints())
+    // setPoints(getAllPoints())
   }, [])
 
 

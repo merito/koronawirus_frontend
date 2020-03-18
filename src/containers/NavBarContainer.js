@@ -1,11 +1,11 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import { LanguageContext } from '../utils/TranslationsProvider'
-import {
-  getInfectedNumber,
-  getDeathsNumber,
-  getCuredNumber,
-} from '../data'
+// import {
+//   getInfectedNumber,
+//   getDeathsNumber,
+//   getCuredNumber,
+// } from '../data'
 import Text from '../components/Text'
 
 const languages = ['pl', 'en']
@@ -22,9 +22,9 @@ const NavBarContainer = () => {
   ]
 
   React.useEffect(() => {
-    setInfectedNumber(getInfectedNumber())
-    setDeathsNumber(getDeathsNumber())
-    setCuredNumber(13)
+    // setInfectedNumber(getInfectedNumber())
+    // setDeathsNumber(getDeathsNumber())
+    // setCuredNumber(13)
   }, [])
 
   return (
