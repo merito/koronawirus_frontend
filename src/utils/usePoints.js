@@ -1,13 +1,19 @@
 import React from 'react'
 import api from '../api'
+import {
+  getPointById,
+  getInfectedNumber,
+  getCuredNumber,
+  getDeathsNumber,
+} from './dataProcessing'
 
 const PointsContext = React.createContext([null, () => {}])
 
 export const PointsProvider = ({ children }) => {
-  const [points, setPoints] = React.useState({
+  const [data, setData] = React.useState({
     loading: true,
     error: false,
-    points: null,
+    points: [],
     getPointById: () => {},
     infectedNumber: null,
     curedNumber: null,
@@ -15,28 +21,30 @@ export const PointsProvider = ({ children }) => {
   })
 
   React.useEffect(() => {
-    try {
-      const { data } = api.get('data.json')
-      console.log('data: ', data);
-      setPoints({
-        loading: true,
-        error: false,
-        points: data,
-        getPointById: () => {},
-        infectedNumber: null,
-        curedNumber: null,
-        deathsNumber: null,
-      })
-    } catch (error) {
-      setPoints({
-        ...points,
-        error: true,
-      })
+    const handleAsync = async () => {
+      try {
+        const { data: { points } } = await api.get('data.json')
+        setData({
+          loading: false,
+          error: false,
+          points,
+          getPointById: id => getPointById(points, id),
+          infectedNumber: getInfectedNumber(points),
+          curedNumber: getCuredNumber(points),
+          deathsNumber: getDeathsNumber(points),
+        })
+      } catch (error) {
+        setData({
+          ...data,
+          error: true,
+        })
+      }
     }
+    handleAsync()
   }, [])
 
   return (
-    <PointsContext.Provider value={[points, setPoints]}>
+    <PointsContext.Provider value={[data, setData]}>
       {children}
     </PointsContext.Provider>
   )
@@ -44,7 +52,8 @@ export const PointsProvider = ({ children }) => {
 
 
 const usePoints = () => {
-  const [points] = React.useContext(CurrentLocationContext)
-  return points
+  const [data] = React.useContext(PointsContext)
+  return data
 }
+
 export default usePoints

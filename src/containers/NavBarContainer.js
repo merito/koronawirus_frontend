@@ -1,22 +1,20 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import { LanguageContext } from '../utils/TranslationsProvider'
-// import {
-//   getInfectedNumber,
-//   getDeathsNumber,
-//   getCuredNumber,
-// } from '../data'
+import usePoints from '../utils/usePoints'
 import Text from '../components/Text'
 
 const languages = ['pl', 'en']
 
-const NavBarContainer = ({
-  points,
-}) => {
+const NavBarContainer = () => {
   const [language, setLanguage] = React.useContext(LanguageContext)
-  const [infectedNumber, setInfectedNumber] = React.useState()
-  const [deathsNumber, setDeathsNumber] = React.useState()
-  const [curedNumber, setCuredNumber] = React.useState()
+  const {
+    loading,
+    error,
+    infectedNumber,
+    curedNumber,
+    deathsNumber,
+  } = usePoints()
 
   const links = [
     { label: <Text id='infoPage.title' />, url: '/info' },

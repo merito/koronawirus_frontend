@@ -1,10 +1,16 @@
 import React from 'react'
 import Map from '../components/Map'
+import usePoints from '../utils/usePoints'
 
 
 const MapContainer = React.forwardRef((props, ref) => {
   const [initalPosition, setInitalPosition] = React.useState()
   const defaultPosition = [51.919231, 19.134422]
+  const {
+    loading,
+    error,
+    points,
+  } = usePoints()
 
   const mapRef = React.useRef()
 
@@ -23,7 +29,7 @@ const MapContainer = React.forwardRef((props, ref) => {
 
   return (
     <Map
-      points={props.points}
+      points={points}
       center={initalPosition && initalPosition.center}
       zoom={initalPosition && initalPosition.zoom}
       {...props}
