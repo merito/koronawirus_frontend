@@ -35,7 +35,6 @@ const SelectedLocationContainer = ({
           setError(true)
           enqueueSnackbar(<Text id='connectionProblem.location' />, { variant: 'error' })
         }
-        setLoading(false)
       }
       handleAsync()
     }
