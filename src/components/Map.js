@@ -67,8 +67,8 @@ const Map = React.forwardRef(({
   }
 
   const calculateIconSize = count => {
-    const calculated = (1.1 + (0.1 * count)) * 25
-    const maxSize = 55
+    const calculated = (1.1 + (0.02 * count)) * 22
+    const maxSize = 70
     return calculated < maxSize ? calculated : maxSize
   }
 
