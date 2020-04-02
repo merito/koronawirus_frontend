@@ -40,11 +40,11 @@ const NavBar = ({
       variant: 'outlined',
       color: '',
     },
-    {
-      label: <Text id='locationInfo.cured' />,
-      value: curedNumber,
-      color: 'secondary',
-    },
+    // {
+    //   label: <Text id='locationInfo.cured' />,
+    //   value: curedNumber,
+    //   color: 'secondary',
+    // },
   ]
 
   return (
