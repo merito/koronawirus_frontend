@@ -30,7 +30,7 @@
     "react-share": "^4.0.1",
     "react-standalone-form": "^0.10.2",
     "react-standalone-form-mui": "^0.1.15",
-    "validator": "^11.1.0",
+    "validator": "^13.7.0",
     "workbox-window": "^5.0.0"
   },
   "scripts": {
